@@ -1,0 +1,116 @@
+@font-face
+{
+    font-family: "SourceCode";
+    src: url("../SourceCodePro-Regular.otf");
+}
+
+body
+{
+    background-color: burlywood;
+}
+
+#bloc_titre
+{
+    font-size: large;
+    text-align: center;
+}
+
+
+.cardBox 
+{
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.4s ease 0s;
+    width: 20%;
+}
+
+.cardBox:hover .card 
+{
+    transform: rotateY(180deg);
+}
+
+.card 
+{
+    background: #666666;
+    cursor: pointer;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease 0s;
+    width: 100%;
+}
+    
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em 0.7em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+.card .back 
+{
+    transform: rotateY( 180deg);
+}
+
+.card .front p:hover 
+{
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+
+    
+@-webkit-keyframes giro 
+{
+    from {
+    transform: rotateY(180deg);
+    }
+    to {
+    transform: rotateY(0deg);
+    }
+}
+    
+@keyframes giro 
+{
+    from {
+    transform: rotateY(180deg);
+    }
+    to {
+    transform: rotateY(0deg);
+    }
+ }
+    
+ @media screen and (max-width: 767px) 
+ {
+    .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+    }
+    .card {
+    height: 285px;
+    }
+    .cardBox:last-child {
+    margin-bottom: 3%;
+    }
+}
+    
+@media screen and (max-width: 480px) 
+{
+    .cardBox {
+    width: 94.5%;
+    }
+    .card {
+    height: 260px;
+    }
+}
