@@ -1,116 +1,63 @@
 @font-face
 {
-    font-family: "SourceCode";
-    src: url("../SourceCodePro-Regular.otf");
+    font-family: "PiecesOfEight";
+    src: url("Polices/pieces_of_eight/Pieces\ of\ Eight.ttf");
 }
 
-body
-{
-    background-color: burlywood;
+#bloc_titre {
+    font-size : xx-large;
+    text-align : center;
+    font-family: "PiecesOfEight";
 }
 
-#bloc_titre
-{
-    font-size: large;
-    text-align: center;
+#photos{
+    display: flex;
+    margin:auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
-.cardBox 
-{
-    float: left;
-    font-size: 1.2em;
-    margin: 1% 0 0 1%;
-    perspective: 800px;
-    transition: all 0.4s ease 0s;
-    width: 20%;
+.flippingcard {
+    position: relative;
+    margin: 0.5em;
 }
 
-.cardBox:hover .card 
-{
-    transform: rotateY(180deg);
+div[class^="card"] {
+    height: 300px;
+    width: 300px;
+    perspective-origin: center bottom;
+    position: sticky;
 }
 
-.card 
-{
-    background: #666666;
-    cursor: pointer;
-    height: 250px;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease 0s;
-    width: 100%;
-}
-    
-.card .front,
-.card .back {
-    backface-visibility: hidden;
-    box-sizing: border-box;
-    color: white;
-    display: block;
-    font-size: 1.2em;
+div[class^="card"] [class^="face"] {
     height: 100%;
-    padding: 0.8em 0.7em;
-    position: absolute;
-    text-align: center;
     width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
 }
 
-
-.card .back 
-{
-    transform: rotateY( 180deg);
+div[class^="card"] .face-front {
+    background-color: #ED7E10;
+    z-index: 5;
 }
 
-.card .front p:hover 
-{
-    background: #fff;
-    color: #333;
-    text-shadow: 0 0 1px #333;
+div[class^="card"] .face-back {
+    background-color: #D2D0D0;
+    z-index: 0;
+    transform: rotateY(-180deg);
 }
 
-
-    
-@-webkit-keyframes giro 
-{
-    from {
+div[class^="card"].rotated .face-front {
+    z-index: 5;
     transform: rotateY(180deg);
-    }
-    to {
-    transform: rotateY(0deg);
-    }
 }
-    
-@keyframes giro 
-{
-    from {
-    transform: rotateY(180deg);
-    }
-    to {
+div[class^="card"].rotated .face-back {
+    z-index: 10;
     transform: rotateY(0deg);
-    }
- }
-    
- @media screen and (max-width: 767px) 
- {
-    .cardBox {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
-    }
-    .card {
-    height: 285px;
-    }
-    .cardBox:last-child {
-    margin-bottom: 3%;
-    }
-}
-    
-@media screen and (max-width: 480px) 
-{
-    .cardBox {
-    width: 94.5%;
-    }
-    .card {
-    height: 260px;
-    }
 }
