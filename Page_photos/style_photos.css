@@ -4,10 +4,26 @@
     src: url("Polices/pieces_of_eight/Pieces\ of\ Eight.ttf");
 }
 
+/*
+#background_image {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    max-width: 100%;
+	height: auto;
+}
+*/
+
+body {
+    background-image: url("Images/Fond_ecran_pirates.jpg");
+    background-size: cover;
+}
+
 #bloc_titre {
     font-size : xx-large;
     text-align : center;
     font-family: "PiecesOfEight";
+    z-index: 5;
 }
 
 #photos{
@@ -15,9 +31,12 @@
     margin:auto;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+img {
+    border-radius: 1em;
+}
 
 .flippingcard {
     position: relative;
@@ -34,6 +53,7 @@ div[class^="card"] {
 div[class^="card"] [class^="face"] {
     height: 100%;
     width: 100%;
+    border-radius: 1em;
     position: absolute;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -47,8 +67,18 @@ div[class^="card"] .face-front {
     z-index: 5;
 }
 
+div[class^="card"] p {
+    height: 280px;
+    width: 280px;
+    font-family: "PiecesOfEight";
+    font-size: large;
+    overflow: auto;
+    margin: 20px;
+    margin-right: 20px;
+}
+
 div[class^="card"] .face-back {
-    background-color: #D2D0D0;
+    background-color: burlywood;
     z-index: 0;
     transform: rotateY(-180deg);
 }
