@@ -1,0 +1,133 @@
+/* FONT */
+
+@font-face {
+    font-family: "matura MT Script Capitals";
+    src: url("../fonts/MATURASC.TTF");
+}
+html {
+    height: 100%;
+}
+body {
+    background-image: url("../images/background.jpg");
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+/*  BANNER */
+
+header {
+    height: 8%;
+}
+header #banner {
+    background-color: #2E2422;
+    margin-top: 2%;
+}
+
+#banner nav {
+    display: flex;
+    align-items: center;
+}
+
+#banner nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+#banner nav ul li {
+    margin-right: 3%;
+    font-family: 'matura MT Script Capitals', arial;
+}
+
+#banner nav ul li a {
+    color: #E4DCC7;
+    text-decoration: none;
+    font-size: 2.0em;
+}
+
+#banner nav ul li a:hover {
+    background-color: #964534;
+}
+
+#language_selection {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+#language_button {
+    background-color: #2E2422;
+    color: #E4DCC7;
+    border: none;
+    cursor: pointer;
+}
+
+#language_button:hover {
+    background-color: #964534;
+}
+
+.dropdown {
+    display: none;
+    background-color: #2E2422;
+}
+
+.dropdown a {
+    display: block;
+}
+
+#language_selection:hover .dropdown {
+    display: block;
+}
+
+/* BODY */
+
+section {
+    flex: 1;
+    margin-bottom: 1%;
+}
+
+.content {
+    background-color: #9A9E83;
+    display: flex;
+    justify-content: center;
+}
+
+.show_zone {
+    background-color: #E4DCC7;
+    width: 80%;
+}
+
+footer {
+    background-color: #2E2422;
+}
+
+footer * {
+    color: #E4DCC7;
+    text-decoration: none;
+}
+
+footer nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+footer nav ul ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav ul ul a {
+    text-decoration: none;
+}
+
+#license {
+    margin-right: auto;
+    font-family: "matura MT Script Capitals", arial;
+}
+
+#conditions {
+    margin-left: auto;
+}
