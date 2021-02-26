@@ -1,0 +1,1 @@
+(()=>{function e(){for(var e=this.parentNode.querySelectorAll("div[class^='card']"),t=0;t<e.length;t++)"card-single"==e[t].className?e[t].className+=" rotated":e[t].className="card-single"}window.onload=function(){for(buttons=document.querySelectorAll("card-single"),i=0;i<buttons.length;i++)element=buttons[i],element.addEventListener("click",e)}})();
