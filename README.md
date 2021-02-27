@@ -18,10 +18,10 @@ Créer le nouveau fichier en php.
 Inclure dans le head le fichier de style `<link rel="stylesheet" href="styles/templates.css" />`
 
 Il faut ensuite déclarer le `<body>` comme suit:
-~~~html
+
 	<body>
 		<?php include "templates/header.html"; ?>
 		<!-- Votre code -->
 		<?php incldue "templates/footer.html"; ?>
 	</body>
-~~~
+
