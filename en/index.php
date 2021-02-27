@@ -14,7 +14,7 @@
 <body>
 
     <?php
-    include "../templates/header.html"; ?>
+    include "templates/header.html"; ?>
 
     <div id="acceuil">
         <img src="../images/photo_bureau.png" alt="bureau" />
@@ -22,7 +22,7 @@
     </div>
 
     <?php
-    include "../templates/footer.html";
+    include "templates/footer.html";
     ?>
 
 </body>
