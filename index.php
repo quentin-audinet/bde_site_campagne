@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <title>Acceuil</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/acceuil.css" />
+    <script>
+        var page = "index.php";
+    </script>
 </head>
 
 <body>
