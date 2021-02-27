@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'caribbean';
+    src: url("../fonts/Caribbean.ttf");
+}
+
+.show_zone {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show_zone > img {
+    width: 50%;
+}
+
+#acceuil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#acceuil p {
+    position: absolute;
+    top: 80%;
+    background-image: url("../images/parchemin.png");
+    width: 636px;
+    height: 380px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'caribbean', arial;
+    font-size: 1.9em;
+}
