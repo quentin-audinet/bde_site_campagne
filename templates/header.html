@@ -8,10 +8,22 @@
             <li><a href="#">Sponsors</a> </li>
             <li><a href="#">Espace Photo</a> </li>
             <li><a href="#">Nous contacter</a> </li>
-            <li id="language_selection"><a href="#">▼<img src="images/french_flag.png" class="flag"/></a>
+            <li id="language_selection"><a href="#">▼<img src="flag.png" class="flag"/></a>
                 <ul>
-                    <li><a href="#">Français</a> </li>
-                    <li><a href="#">English</a> </li>
+                    <li><a id = "lang_fr" href="#">Français</a> </li>
+                    <li><a id = "lang_en" href="#">English</a> </li>
+                    <script>
+                        document.getElementById("lang_fr").addEventListener("click", (e) => {
+                            open("/website/"+page,"_self");
+                            e.stopPropagation();
+                            e.preventDefault();
+                        });
+                        document.getElementById("lang_en").addEventListener("click", (e) => {
+                            open("/website/en/"+page,"_self");
+                            e.stopPropagation();
+                            e.preventDefault();
+                        });
+                    </script>
                 </ul>
             </li>
         </ul>
