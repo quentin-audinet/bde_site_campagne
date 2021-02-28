@@ -11,6 +11,7 @@
 }
 
 .show_zone > img {
+    position: absolute;
     width: 50%;
 }
 
@@ -18,11 +19,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 #acceuil p {
     position: absolute;
-    top: 80%;
+    top: 750px;
     background-image: url("../images/parchemin.gif");
     width: 636px;
     height: 380px;

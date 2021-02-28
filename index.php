@@ -22,6 +22,7 @@
     </div>
 
     <script>
+        document.querySelector("#acceuil > p").setAttribute("style", "background-image: url('images/parchemin.gif?rd="+Math.random()+"'");
         const text = document.querySelector("#acceuil p > span");
         text.setAttribute("style", "opacity:0");
         setTimeout(() => {
