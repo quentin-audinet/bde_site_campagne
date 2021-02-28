@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/acceuil.css" />
     <script>
-        var page = "index.php";
+        const page = "index.php";
     </script>
 </head>
 
@@ -18,9 +18,21 @@
 
     <div id="acceuil">
         <img src="images/photo_bureau.png" alt="bureau" />
-        <p>Pirates des Carabed</p>
+        <p class="neon__text"><span>&ensp;<br/>Pirates des<br/>&ensp;<br/> Carabed</span></p>
     </div>
 
+    <script>
+        const text = document.querySelector("#acceuil p > span");
+        text.setAttribute("style", "opacity:0");
+        setTimeout(() => {
+            for(let i=0; i<20;i++) {
+                setTimeout(() => {
+                    text.setAttribute("style", "opacity:"+i/20);
+                },100*i);
+            }
+            text.removeAttribute("style");
+        }, 900);
+    </script>
     <?php
     include "templates/footer.html";
     ?>

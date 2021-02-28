@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/template.css" />
     <link rel="stylesheet" href="../styles/acceuil.css" />
     <script>
-        var page = "index.php";
+        const page = "index.php";
     </script>
 </head>
 
