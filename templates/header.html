@@ -1,11 +1,15 @@
+<script>
+    const url = document.location.href.substring(0,document.location.href.search(page));
+</script>
+
 <header>
     <div id="banner">
         <ul>
-            <li><a href="#">Acceuil</a></li>
+            <li><a href="index.php">Acceuil</a></li>
             <li><a href="#">Agenda</a></li>
             <li><a href="#">Défis</a> </li>
-            <li><a href="#">Membres</a> </li>
-            <li><a href="#">Sponsors</a> </li>
+            <li><a href="Page_photos/Photos_listeux.html">Membres</a> </li>
+            <li><a href="partners.php">Sponsors</a> </li>
             <li><a href="#">Espace Photo</a> </li>
             <li><a href="#">Nous contacter</a> </li>
             <li id="language_selection"><a href="#">▼<img src="flag.png" class="flag"/></a>
@@ -14,12 +18,12 @@
                     <li><a id = "lang_en" href="#">English</a> </li>
                     <script>
                         document.getElementById("lang_fr").addEventListener("click", (e) => {
-                            open("/website/"+page,"_self");
+                            open(url+page,"_self");
                             e.stopPropagation();
                             e.preventDefault();
                         });
                         document.getElementById("lang_en").addEventListener("click", (e) => {
-                            open("/website/en/"+page,"_self");
+                            open(url+'en/'+page,"_self");
                             e.stopPropagation();
                             e.preventDefault();
                         });

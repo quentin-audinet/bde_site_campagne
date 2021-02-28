@@ -1,3 +1,7 @@
+<script>
+    const url = document.location.href.substring(0,document.location.href.search("en/"+ page));
+</script>
+
 <header>
     <div id="banner">
         <ul>
@@ -14,12 +18,12 @@
                     <li><a id = "lang_en" href="#">English</a> </li>
                     <script>
                         document.getElementById("lang_fr").addEventListener("click", (e) => {
-                            open("/website/"+page,"_self");
+                            open(url+page,"_self");
                             e.stopPropagation();
                             e.preventDefault();
                         });
                         document.getElementById("lang_en").addEventListener("click", (e) => {
-                            open("/website/en/"+page,"_self");
+                            open(url+page,"_self");
                             e.stopPropagation();
                             e.preventDefault();
                         });

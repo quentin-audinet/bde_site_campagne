@@ -10,7 +10,6 @@
         const page="partners.php";
     </script>
 </head>
-</html>
 
 <body>
 
@@ -33,9 +32,9 @@
         <a href="#"><img id="logo_8" class="logo" src="images/telecom_paristech.jpg" alt="telecom" /></a>
         <a href="#"><img id="logo_9" class="logo" src="images/jack.jpg" alt="jack d" /></a>
 
-
     </div>
 
     <?php
     include "templates/footer.html"?>
 </body>
+</html>

@@ -20,6 +20,7 @@
         <img src="../images/photo_bureau.png" alt="bureau" />
         <p class="neon__text"><span>&ensp;<br/>Pirates des<br/>&ensp;<br/> Carabed</span></p>
     </div>
+
     <script>
         document.querySelector("#acceuil > p").setAttribute("style", "background-image: url('../images/parchemin.gif?rd="+Math.random()+"'");
         const text = document.querySelector("#acceuil p > span");
