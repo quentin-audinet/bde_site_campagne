@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="<?php echo $_COOKIE['lang']; ?>">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 <body>
 
     <?php
-    include "templates/header.html"; ?>
+    include "templates/header.php"; ?>
 
     <div id="acceuil">
         <img src="images/photo_bureau.png" alt="bureau" />

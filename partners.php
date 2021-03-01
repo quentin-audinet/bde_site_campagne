@@ -14,7 +14,7 @@
 <body>
 
     <?php
-    include "templates/header.html";?>
+    include "templates/header.php";?>
 
     <div class="sponsors_container">
         <div id="chest">
