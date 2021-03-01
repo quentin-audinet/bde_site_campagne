@@ -3,7 +3,7 @@
 </script>
 
 <header>
-    <div id="banner">
+    <nav id="banner">
         <ul>
             <li><a href="index.php">Acceuil</a></li>
             <li><a href="#">Agenda</a></li>
@@ -12,26 +12,33 @@
             <li><a href="partners.php">Sponsors</a> </li>
             <li><a href="#">Espace Photo</a> </li>
             <li><a href="#">Nous contacter</a> </li>
-            <li id="language_selection"><a href="#">▼<img src="flag.png" class="flag"/></a>
-                <ul>
-                    <li><a id = "lang_fr" href="#">Français</a> </li>
-                    <li><a id = "lang_en" href="#">English</a> </li>
-                    <script>
-                        document.getElementById("lang_fr").addEventListener("click", (e) => {
-                            open(url+page,"_self");
-                            e.stopPropagation();
-                            e.preventDefault();
-                        });
-                        document.getElementById("lang_en").addEventListener("click", (e) => {
-                            open(url+'en/'+page,"_self");
-                            e.stopPropagation();
-                            e.preventDefault();
-                        });
-                    </script>
-                </ul>
-            </li>
         </ul>
-    </div>
+        <div id="language_selector" class="dropdown">
+            <button onclick="chgLanguage()" class="dropbtn">▼&ensp;<img class="flag" src="flag.png" alt="French" /></button>
+            <div id="dropdown_language" class="dropdown_content">
+                <a href="#">FR&ensp;<img class="flag" src="flag.png" alt=""/></a>
+                <a href="#">EN&ensp;<img class="flag" src="en/flag.png" alt=""></a>
+            </div>
+        </div>
+
+        <script>
+            const chgLanguage = () => {
+                document.getElementById("dropdown_language").classList.toggle("show");
+            };
+
+            window.onclick = function(event) {
+                if(!event.target.matches('.dropbtn') && !event.target.matches('.flag')) {
+                    const dropdowns = document.getElementsByClassName("dropdown_content");
+                    for(let i = 0; i < dropdowns.length; i++) {
+                        const openDropdown = dropdowns[i];
+                        if(openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            };
+        </script>
+    </nav>
 </header>
 
 <section class="content">

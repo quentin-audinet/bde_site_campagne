@@ -40,6 +40,10 @@ body {
     padding: 0;
 }
 
+#language_selector {
+    margin-left: auto;
+}
+
 #banner li a {
     display: block;
     background-color: #2E2422;
@@ -56,24 +60,53 @@ body {
     color: navajowhite;
 }
 
-#banner ul li ul {
-    display: none;
+.dropbtn {
+    background-color: #2E2422;
+    color: #E4DCC7;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-#banner ul li:hover ul {
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #964534;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #2E2422;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: #E4DCC7;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
 }
 
-#banner li:hover ul li {
-    float: none;
+.dropdown a:hover {
+    background-color: #964534;
+    color: navajowhite;
 }
 
-#banner li ul {
-    position: absolute;
+.show {
+    display: block;
 }
 
 .flag {
-    width: 30%;
+    height: 20px;
+    width: 30px;
 }
 
 /* BODY */
