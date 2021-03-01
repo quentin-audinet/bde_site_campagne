@@ -104,7 +104,7 @@ body {
     display: block;
 }
 
-.flag {
+.flag, .flag_menu {
     height: 20px;
     width: 30px;
 }
