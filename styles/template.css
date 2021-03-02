@@ -78,6 +78,10 @@ body {
     display: inline-block;
 }
 
+#dropdown_language {
+    cursor: pointer;
+}
+
 .dropdown_content {
     display: none;
     position: absolute;
@@ -88,14 +92,14 @@ body {
     z-index: 1;
 }
 
-.dropdown_content a {
+.dropdown_content span {
     color: #E4DCC7;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown a:hover {
+.dropdown span:hover {
     background-color: #964534;
     color: navajowhite;
 }

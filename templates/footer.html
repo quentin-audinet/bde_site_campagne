@@ -14,8 +14,16 @@
             <li><ul>
                 <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
                 <li><a href="#"><span class="t_photos" /></a> </li>
-                <li><a href="#"><span class="t_contact" /></a> </li>
+                <li><a href="contact.php"><span class="t_contact" /></a> </li>
             </ul></li>
+
+            <script>
+                for(let link of document.querySelectorAll("footer nav ul li ul li a")) {
+                    link.addEventListener("click", () => {
+                        link.setAttribute("href",link.getAttribute("href")+"?lang="+lang);
+                    });
+                }
+            </script>
             <li id="conditions"><a href="#"><span class="t_cgu" /></a></li>
         </ul>
     </nav>

@@ -1,6 +1,9 @@
 <script>
-    const url = document.location.href.substring(0,document.location.href.search(page));
-    if(lang===undefined) {
+    //Définir la langue sur français si aucune n'est définie
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    lang = urlParams.get('lang');
+    if(lang===null) {
         var lang = "fr";
     }
     document.documentElement.lang = lang;
@@ -16,16 +19,28 @@
             <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
             <li><a href="#"><span class="t_photos" /></a> </li>
             <li><a href="contact.php"><span class="t_contact" /></a> </li>
+
+            <!-- Passer la langue dans l'url -->
+            <script>
+                for(let link of document.querySelectorAll("#banner ul li a")) {
+                    link.addEventListener("click", () => {
+                        link.setAttribute("href",link.getAttribute("href")+"?lang="+lang);
+                    });
+                }
+            </script>
         </ul>
+
         <div id="language_selector" class="dropdown">
             <button onclick="chgLanguage()" class="dropbtn">▼&ensp;<img class="flag_menu" src="images/fr_flag.png" alt="French" /></button>
             <div id="dropdown_language" class="dropdown_content">
-                <a class="language" href="#" lang="fr">FR&ensp;<img class="flag" src="images/fr_flag.png" alt=""/></a>
-                <a class="language" href="#" lang="en">EN&ensp;<img class="flag" src="images/en_flag.png" alt=""></a>
+                <span class="language" href="#" lang="fr">FR&ensp;<img class="flag" src="images/fr_flag.png" alt=""/></span>
+                <span class="language" href="#" lang="en">EN&ensp;<img class="flag" src="images/en_flag.png" alt=""></span>
             </div>
         </div>
 
         <script>
+
+            document.querySelector("#language_selector button img").setAttribute("src", "images/"+lang+"_flag.png");
             const chgLanguage = () => {
                 document.getElementById("dropdown_language").classList.toggle("show");
             };
