@@ -2,8 +2,7 @@
 
 ## Structure du projet
 
- * **./** Tous les fichiers php/html en français
- * **/en** Les mêmes fichiers en anglais
+ * **./** Tous les fichiers php/html
  * **/images** Les images nécessaires au projet
  * **/fonts** Les polices utilisées
  * **/styles** Les feuilles de style
