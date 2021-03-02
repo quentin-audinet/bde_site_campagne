@@ -8,16 +8,24 @@ let dictionary = {
     }
 };
 /* ----- DECLARER ICI TOUS LES TEXTES ----- */
-dictionary.add("t_acceuil","Acceuil","TODO");
-dictionary.add("t_agenda", "Agenda", "TODO");
-dictionary.add("t_defis", "Défis", "TODO");
+dictionary.add("t_acceuil","Acceuil","Home");
+dictionary.add("t_agenda", "Agenda", "Agenda");
+dictionary.add("t_defis", "Défis", "Challenges");
+dictionary.add("t_membres", "Membres", "Members");
+dictionary.add("t_sponsors", "Sponsors", "Partners");
+dictionary.add("t_photos", "Espace photos", "Photos");
+dictionary.add("t_contact","Nous contacter", "Contact us");
+dictionary.add("t_cgu", "Conditions générales d'utilisation", "Terms of use");
+
 
 
 // Remplir les textes
 
 const replaces_texts = (map) => {
     for(const [id,trad] of map.entries()) {
-        document.getElementById(id).innerHTML = trad;
+        for(let elt of document.getElementsByClassName(id)) {
+            elt.innerHTML = trad;
+        }
     }
 };
 const reload_language = () => {

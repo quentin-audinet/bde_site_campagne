@@ -9,13 +9,13 @@
 <header>
     <nav id="banner">
         <ul>
-            <li><a href="index.php"><span id="t_acceuil" /></a></li>
-            <li><a href="#"><span id="t_agenda" /></a></li>
-            <li><a href="#"><span id="t_defis" /></a> </li>
-            <li><a href="Page_photos/Photos_listeux.html">Membres</a> </li>
-            <li><a href="partners.php">Sponsors</a> </li>
-            <li><a href="#">Espace Photo</a> </li>
-            <li><a href="#">Nous contacter</a> </li>
+            <li><a href="index.php"><span class="t_acceuil" /></a></li>
+            <li><a href="#"><span class="t_agenda" /></a></li>
+            <li><a href="#"><span class="t_defis" /></a> </li>
+            <li><a href="Page_photos/Photos_listeux.html"><span class="t_membres" /></a> </li>
+            <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
+            <li><a href="#"><span class="t_photos" /></a> </li>
+            <li><a href="#"><span class="t_contact" /></a> </li>
         </ul>
         <div id="language_selector" class="dropdown">
             <button onclick="chgLanguage()" class="dropbtn">▼&ensp;<img class="flag_menu" src="images/fr_flag.png" alt="French" /></button>

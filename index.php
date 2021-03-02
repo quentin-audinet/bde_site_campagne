@@ -17,6 +17,15 @@
     <?php
     include "templates/header.php"; ?>
 
+
+    <script>
+        $.ajax({
+            url: "scripts/test.php",
+            success: function (result) {
+                alert(result);
+            }
+        });
+    </script>
     <div id="acceuil">
         <img src="images/photo_bureau.png" alt="bureau" />
         <p class="neon__text"><span>&ensp;<br/>Pirates des<br/>&ensp;<br/> Carabed</span></p>

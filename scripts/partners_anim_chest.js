@@ -2,7 +2,7 @@ let id=null;
 
 const open = () => {
     const chest = document.getElementById("chest_img");
-    chest.setAttribute("src","images/chest_opening.gif");
+    chest.setAttribute("src","images/chest_opening-min.gif");
     chest.style.cursor = "auto";
     chest.removeEventListener("click",open);
     setTimeout(move_logos, 820);
