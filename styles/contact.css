@@ -1,3 +1,95 @@
+.map_container {
+    position: relative;
+    height: 513px;
+    width: 1000px;
+    margin: 40px auto;
+}
+
 #map_panel {
     cursor: zoom-in;
+    border-radius: 5%;
+}
+
+.map_container a {
+    position: absolute;
+}
+
+.map_container div {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #E4DCC7;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.map_container div .fa {
+    color: #E4DCC7;
+    margin-top: 9px;
+    margin-left: 1px;
+    transition: all 0.5s ease;
+}
+
+
+/* FACEBOOK */
+.map_container div.facebook {
+    position: absolute;
+    top: 126px;
+    left: 225px;
+}
+
+.map_container div:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.map_container div:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+
+/* INSTAGRAM */
+.map_container div.instagram {
+    position: absolute;
+    top: 242px;
+    left: 480px;
+}
+
+.map_container div:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.map_container div:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/* MAIL */
+.map_container div.mail {
+    position: absolute;
+    top: 134px;
+    left: 550px;
+}
+
+.map_container div:hover.mail {
+    border: 5px solid #0ed2f5;
+    box-shadow: 0 0 15px #0ed2f5;
+    transition: all 0.5s ease;
+}
+
+.map_container div:hover .fa-envelope {
+    color: #0ed2f5;
+    text-shadow: 0 0 15px #0ed2f5;
+    transition: all 0.5s ease;
 }

@@ -147,10 +147,17 @@ footer nav ul ul {
     flex-direction: column;
 }
 
+footer nav ul ul li {
+    margin: 2px 3px;
+}
+
 footer nav ul ul a {
     text-decoration: none;
 }
 
+footer nav ul ul a:hover {
+    border-bottom: 1px solid #E4DCC7;
+}
 #license {
     margin-right: auto;
     font-family: "matura MT Script Capitals", arial;

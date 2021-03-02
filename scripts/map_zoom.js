@@ -3,7 +3,7 @@ var image;
 var iMouseX, iMouseY = 1;
 var bMouseDown = false;
 var iZoomRadius = 100;
-var iZoomPower = 4;
+var iZoomPower = 10;
 
 const clear = () => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -33,7 +33,7 @@ $(function(){
     image = new Image();
     image.onload = function () {
     }
-    image.src = "images/carte.jpg";
+    image.src = "images/map.jpg";
 
     canvas = document.getElementById('map_panel');
     ctx = canvas.getContext('2d');
@@ -44,9 +44,13 @@ $(function(){
     });
     $('#map_panel').mousedown(function (e) {
         bMouseDown = true;
+        document.getElementById("map_panel").style.cursor = "none";
     });
     $('#map_panel').mouseup(function (e) {
         bMouseDown = false;
+        document.getElementById("map_panel").style.cursor = "zoom-in";
+
+
     });
     setInterval(drawScene, 30);
 });
