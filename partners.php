@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Nos sponsors</title>
+    <title class="t_sponsors">Nos sponsors</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/partners.css" />
     <script>
