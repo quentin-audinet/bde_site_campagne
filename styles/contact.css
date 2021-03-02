@@ -93,3 +93,43 @@
     text-shadow: 0 0 15px #0ed2f5;
     transition: all 0.5s ease;
 }
+
+/* LOCK */
+.map_container div.lock {
+    position: absolute;
+    top: 257px;
+    left: 733px;
+}
+
+.map_container div:hover.lock {
+    border: 5px solid #ffb800;
+    box-shadow: 0 0 15px #ffb800;
+    transition: all 0.5s ease;
+}
+
+.map_container div:hover .fa-lock {
+    color: #ffb800;
+    text-shadow: 0 0 15px #ffb800;
+    transition: all 0.5s ease;
+}
+
+/* UNLOCK */
+
+/* PS: Tu ne trouveras rien ici... Mais cherche ailleurs ! */
+.map_container div.unlock {
+    position: absolute;
+    top: 257px;
+    left: 733px;
+}
+
+.map_container div:hover.unlock {
+    border: 5px solid #12ff1f;
+    box-shadow: 0 0 15px #12ff1f;
+    transition: all 0.5s ease;
+}
+
+.map_container div:hover .fa-unlock {
+    color: #12ff1f;
+    text-shadow: 0 0 15px #12ff1f;
+    transition: all 0.5s ease;
+}

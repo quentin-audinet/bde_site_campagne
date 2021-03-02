@@ -18,6 +18,22 @@
     <div class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
     <div class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
     <div class="mail"><a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
+    <div class="<?php if(isset($pass)) {echo 'un'; } ?>lock"><a href="#"><i class="fa fa-<?php if(isset($pass)) {echo 'un'; } ?>lock fa-2x" aria-hidden="true"></i></a></div>
+
+    <script>
+        document.getElementsByClassName("<?php if(isset($pass)) {echo 'un'; } ?>lock")[0].addEventListener("click", (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            <?php
+            if(!isset($pass)) {
+                echo 'alert("tiens tiens tiens");';
+            } else {
+                echo 'open("index.php", "_self");';
+            }
+            ?>
+        })
+    </script>
+
 </div>
 
 <?php include "templates/footer.html"; ?>
