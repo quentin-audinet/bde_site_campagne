@@ -32,10 +32,10 @@ Il faut ensuite déclarer le `<body>` comme suit:
 
 Il suffit de remplacer chaque texte par `<span class="id_du_texte" />`.
 
-La traduction se fait alors dans le fichier **/scripts/languages.js**. Insérer dans la section indiquer la ligne suivante:
+La traduction se fait alors dans le fichier **/scripts/languages.js**. Insérer dans la section indiquée la ligne suivante:
 
 ```javascript
-dictionary.add("id_du_texte", "traduction_française", "traduction_anglaise" [, autres_traductions]);
+dictionary.add("id_du_texte", "traduction_française", "traduction_anglaise" [, "autres_traductions"]);
 ```
 
 *Cas des `<title>`*
