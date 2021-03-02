@@ -15,7 +15,7 @@
             <li><a href="Page_photos/Photos_listeux.html"><span class="t_membres" /></a> </li>
             <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
             <li><a href="#"><span class="t_photos" /></a> </li>
-            <li><a href="#"><span class="t_contact" /></a> </li>
+            <li><a href="contact.php"><span class="t_contact" /></a> </li>
         </ul>
         <div id="language_selector" class="dropdown">
             <button onclick="chgLanguage()" class="dropbtn">▼&ensp;<img class="flag_menu" src="images/fr_flag.png" alt="French" /></button>
