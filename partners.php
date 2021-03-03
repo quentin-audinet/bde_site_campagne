@@ -6,9 +6,6 @@
     <title class="t_sponsors">Nos sponsors</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/partners.css" />
-    <script>
-        const page="partners.php";
-    </script>
 </head>
 
 <body>
