@@ -26,14 +26,17 @@
             }
         });
     </script>
+
     <div id="acceuil">
-        <img src="images/photo_bureau.png" alt="bureau" />
-        <p class="neon__text"><span>&ensp;<br/>Pirates des<br/>&ensp;<br/> Carabed</span></p>
+        <img id="bureau" src="images/photo_bureau.png" alt="bureau" />
+        <img id="parchemin" src="images/parchemin.gif" alt="parchemin" />
+        <p class="neon__text">Pirates des<br />Carabed</p>
+        <!--<p class="neon__text"><span>&ensp;<br/>Pirates des<br/>&ensp;<br/> Carabed</span></p>-->
     </div>
 
     <script>
-        document.querySelector("#acceuil > p").setAttribute("style", "background-image: url('images/parchemin.gif?rd="+Math.random()+"'");
-        const text = document.querySelector("#acceuil p > span");
+        document.querySelector("#parchemin").setAttribute("src", "images/parchemin.gif?rd="+Math.random()+"'");
+        const text = document.querySelector("#acceuil p");
         text.setAttribute("style", "opacity:0");
         setTimeout(() => {
             for(let i=0; i<20;i++) {

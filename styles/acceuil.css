@@ -10,30 +10,42 @@
     align-items: center;
 }
 
-.show_zone > img {
-    position: absolute;
-    width: 50%;
-}
-
 #acceuil {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
 
+#bureau {
+    max-width: 1200px;
+    width: 100%;
+}
+
+#parchemin {
+    position: absolute;
+    max-width: 850px;
+    width: 70%;
+    bottom: -30%;
+}
+
 #acceuil p {
     position: absolute;
-    top: 750px;
-    background-image: url("../images/parchemin.gif");
-    width: 636px;
-    height: 380px;
+    font-family: 'caribbean', Arial;
+    font-size: 4.4vw;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'caribbean', arial;
-    font-size: 2.4em;
+    line-height: 6.0vw;
+    z-index: 1;
+    bottom: -21%;
+}
+@media screen and (min-width: 1550px) {
+    #acceuil p {
+        font-size: 4.25em;
+        line-height: 93px   ;
+    }
+    
 }
 
 .neon__text {
