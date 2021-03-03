@@ -3,7 +3,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     lang = urlParams.get('lang');
-    if(lang===null) {
+    if(lang===null || ["fr","en"].indexOf(lang)<0) {
         var lang = "fr";
     }
     document.documentElement.lang = lang;
