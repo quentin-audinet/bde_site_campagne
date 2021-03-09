@@ -1,0 +1,16 @@
+{
+    "name": "quentin/carabed",
+    "description": "Pirates des Carabed",
+    "type": "project",
+    "require": {
+        "php": "7.4.15"
+    },
+    "license": "none",
+    "authors": [
+        {
+            "name": "Quentin Audinet",
+            "email": "quentin.audinet@telecom-paris.fr"
+        }
+    ]
+}
+
