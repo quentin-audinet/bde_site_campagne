@@ -7,6 +7,12 @@
     <title class="t_acceuil">Acceuil</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/acceuil.css" />
+
+    <!-- Ah enfin un curieux ! Une vieille légende raconte qu'un trésor se trouve sur ce site. Malheureusement j'ai perdu ce vieux fichier.....
+         Si je me souviens bien il s'intitulait "legende.txt". A tous les coups je l'avais caché dans un dossier secret pour éviter que quelqu'un ne tombe dessus.
+         Encore une bonne idée ça...-->
+
+    <!-- Si tu es bloqué tu peux négocier un indice avec Quentin Audinet -->
 </head>
 
 <body>
@@ -44,15 +50,15 @@
         }
 
         const check_anim = () => {
-            let pageBottom = scrollY + document.body.clientHeight;
+            let pageBottom = (scrollY + window.innerHeight);
             let parchemin = document.querySelector("#parchemin");
-            let parcheminBottom = parchemin.offsetTop;
+            let parcheminBottom = parchemin.getBoundingClientRect().bottom;
             if(pageBottom > parcheminBottom) {
                 anim_parchemin();
             }
         };
-
         window.addEventListener('scroll', check_anim);
+        setTimeout(check_anim, 200);
     </script>
     <?php
     include "templates/footer.html";
