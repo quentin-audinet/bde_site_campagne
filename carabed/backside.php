@@ -1,6 +1,5 @@
-<?php require "conf.php"; ?>
+<?php require "conf.php";
 
-<?php
 if(!isset($_SESSION['username'])) {
     header('Location:login.php');
 }
