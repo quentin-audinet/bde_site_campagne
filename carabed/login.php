@@ -28,23 +28,23 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/back_acceuil.css" />
+    <link rel="stylesheet" href="styles/register.css" />
 </head>
 
 <body>
 <h1>Bienvenue</h1>
-<p>Si tu es ici c'est que tu as découvert la légende. Peut-être la prophétie va-t-elle enfin se réaliser ?</p>
-<p>Avant tout tu vas devoir jurer fidélité aux Pirates des Carabed ou nous prouver que tu l'as déjà fait.</p>
+<p>Si tu es ici c'est que tu as découvert la légende. Peut-être la prophétie va-t-elle enfin se réaliser ?<br/>
+    Avant tout tu vas devoir jurer fidélité aux Pirates des Carabed ou nous prouver que tu l'as déjà fait.</p>
 
 <?php if(isset($erreur)) { print("<p class='error'>$erreur</p>");} ?>
 <form action="" method="post">
 
     <label for="username">Nom de pirate:</label>
-    <input id="username" name="username" type="text" required><br/>
+    <input id="username" name="username" type="text" required><br/><br/>
     <label for="password">Mot de passe:</label>
-    <input id="password" name="password" type="password" required><br/>
-    <input id="remember" name="remember" type="checkbox" /><label for="remember">Qu'on se souvienne de moi</label><br/>
-    <input type="submit" value="Entrer"><br/>
+    <input id="password" name="password" type="password" required><br/><br/>
+    <input id="remember" name="remember" type="checkbox" /><label for="remember">Qu'on se souvienne de moi</label><br/><br/>
+    <input type="submit" value="Entrer"><br/><br/>
     <a href="register.php">Je n'ai pas encore prêté serment</a>
 </form>
 </body>
