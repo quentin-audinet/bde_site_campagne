@@ -50,7 +50,6 @@ function sendMessage($message) {
                 <script>
                     document.getElementById("send_message_btn").addEventListener("click", () => {
                         const message = document.getElementById("message").value;
-                        <?php sendMessage();
                     });
                 </script>
             </aside>
