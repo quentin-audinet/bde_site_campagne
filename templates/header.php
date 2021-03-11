@@ -19,6 +19,9 @@
             <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
             <li><a href="#"><span class="t_photos" /></a> </li>
             <li><a href="contact.php"><span class="t_contact" /></a> </li>
+            <?php if(isset($_COOKIE['user_id'])) {
+                print("<li><a href='carabed/backside.php'>Backside</a></li>");
+            }?>
 
             <!-- Passer la langue dans l'url -->
             <script>

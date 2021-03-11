@@ -66,24 +66,33 @@ nav ul li a {
 aside {
     border: 2px solid white;
     margin: 50px 0px;
+    padding: 0 20px 10px 20px;
 }
 
 #left_panel {
-    flex: 1;
+    flex: 2;
     display: flex;
     flex-direction: column;
 }
 
 #profile {
-    flex: 2;
+    flex: 1;
 }
 
 #chat {
-    flex: 1;
+    flex: 2;
 }
 
+
+/* ---- CLASSEMENT ---- */
+
 #classement {
-    flex: 1;
+    flex: 2;
+}
+
+.ranks {
+    font-size: 1.7em;
+    font-family: Consolas;
 }
 
 #main_content {

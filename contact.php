@@ -20,6 +20,7 @@
     <div class="mail"><a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
     <div class="<?php if(isset($pass)) {echo 'un'; } ?>lock"><a href="#"><i class="fa fa-<?php if(isset($pass)) {echo 'un'; } ?>lock fa-2x" aria-hidden="true"></i></a></div>
 
+    <!-- Il y a peut être des choses à découvrir sur ce site... -->
     <script>
         document.getElementsByClassName("<?php if(isset($pass)) {echo 'un'; } ?>lock")[0].addEventListener("click", (e) => {
             e.stopPropagation();

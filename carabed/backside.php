@@ -5,11 +5,21 @@ if(!isset($_SESSION['username'])) {
 }
 
 function getLastMessages() {
-    $response = $db->query("SELECT username, message, date FROM chat JOIN users ON user_id=users.id ORDER BY date DESC LIMIT 10");
+    require "../db/db_connect.php";
+    return $db->query("SELECT username, message, date FROM chat JOIN users ON user_id=users.id ORDER BY `date` DESC LIMIT 10");
+}
+function sendMessage($message) {
+    require "../db/db_connect.php";
+    $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
+    $req->execute(array(
+            'id' => $_SESSION['id'],
+        'message' => $message
+    ));
 }
 
-function sendMessage($message) {
-    $db->exec("INSERT INTO chat (user_id, message, date) VALUES (".$_SESSION['id'].", '$message', '".$_SESSION['username']."')");
+if(isset($_POST['message'])) {
+    sendMessage($_POST['message']);
+
 }
 ?>
 <!DOCTYPE html>
@@ -30,8 +40,8 @@ function sendMessage($message) {
                 <li><a href="#">Défis</a></li>
                 <li><a href="#">Pirates</a></li>
                 <li><a href="#">Chat</li>
-                <li><a href="#">Aide</a> </li>
-                <li><a href="logout.php">Déconnexion</a> </li>
+                <li><a href="#">Aide</a></li>
+                <li><a href="logout.php">Déconnexion</a></li>
             </ul>
         </nav>
     </header>
@@ -45,13 +55,20 @@ function sendMessage($message) {
 
             <aside id="chat">
                 <h2>Chat</h2>
-                <?php ?>
-                <input id="message" type="text" /><button id="send_message_btn" >Envoyer</button>
-                <script>
-                    document.getElementById("send_message_btn").addEventListener("click", () => {
-                        const message = document.getElementById("message").value;
-                    });
-                </script>
+                <p>
+                    <script>
+                        setTimeout("window.location.href='backside.php';",15000);
+                    </script>
+                <?php
+                $messages = getLastMessages();
+                while($row = $messages->fetch()) {
+                    print("<b>".$row['username'] . "</b> >> " . $row['message'] . "<br/>");
+                }
+                ?>
+                </p>
+                <form action="" method="post">
+                    <input name="message" type="text" /><button style="background: none;border: none"><img src="../images/telecom_paristech.jpg" width="20px" height="20px" /></button>
+                </form>
             </aside>
         </section>
 
@@ -70,6 +87,33 @@ function sendMessage($message) {
 
         <aside id="classement">
             <h2>Classement</h2>
+            <div class="ranks">
+            <?php
+            $results = $db->query("SELECT `username`, `score`, `level` FROM users ORDER BY score DESC LIMIT 3");
+            $i=1;
+            while($row = $results->fetch()) {
+                print("<pre>#$i  ".$row['username']."(".$row['level'].") - ".$row['score']."</pre>");
+                $i++;
+            }
+            $res = $db->query("SELECT COUNT(*) FROM users WHERE score >= (SELECT score FROM users WHERE username='".$_SESSION['username']."')");
+            $rank = $res->fetch()[0];
+            switch ($rank) {
+                case 1:
+                    print("Félicitaion tu es premier ! Ne te laisse pas dépasser si tu veux la récompense.");
+                    break;
+                case 2:
+                    print("2ème ! Tu y es presque ! Quelques défis et à toi le trésor.<br>PS: Tuer le premier ne te donnera pas la récompense.");
+                    break;
+                case 3:
+                    print("Bravo tu es sur le podium. Quelques efforts supplémentaires et tu pourras prétendre au trésor des Carabed.");
+                    break;
+                default:
+                    $res = $db->query("SELECT username,score,level FROM users WHERE id=".$_SESSION['id']);
+                    $user = $res->fetch();
+                    print("<pre>#$rank  ".$user['username']."(".$user['level'].") - ".$user['score']."</pre>");
+            }
+            ?>
+            </div>
         </aside>
     </div>
     </body>

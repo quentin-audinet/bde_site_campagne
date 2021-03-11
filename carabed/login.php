@@ -8,7 +8,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 
     //remember
     if(isset($_POST['remember'])) {
-        setcookie('user_id', $resultat['id'] . "$" . sha1($username.$resultat['password'].$_SERVER['REMOTE_ADDR']), time() + 3600 * 24 * 3, null, null, true, true);
+        setcookie('user_id', $resultat['id'] . "$" . sha1($username.$resultat['password'].$_SERVER['REMOTE_ADDR']), time() + 3600 * 24 * 3, '/', null, true, true);
     }
     if($resultat && password_verify($_POST['password'], $resultat['password'])) {
         session_start();
