@@ -1,8 +1,28 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url("../../fonts/Consolas.ttf");
+}
+
+@font-face {
+    font-family: 'caribbean';
+    src: url("../../fonts/Caribbean.ttf");
+}
+
+html {
+    height: 100%;
+}
 
 body {
     background-color: black;
     color: white;
     margin: 50px;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+    font-family: Consolas;
 }
 
 a {
@@ -12,4 +32,98 @@ a {
 
 .error {
     color: red;
+}
+
+h2 {
+    font-family: caribbean;
+}
+
+
+/* ---- HEADER ---- */
+header {
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+nav ul li {
+    padding: 20px 10px;
+}
+nav ul li a {
+    font-family: Consolas;
+    color: white;
+    font-size: 2em;
+}
+
+/* ---- CORPS ---- */
+
+aside {
+    border: 2px solid white;
+    margin: 50px 0px;
+}
+
+#left_panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile {
+    flex: 2;
+}
+
+#chat {
+    flex: 1;
+}
+
+#classement {
+    flex: 1;
+}
+
+#main_content {
+    flex: 3;
+    margin: 0 4%;
+}
+
+.ascii_art {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Courier New",Courier,mono;
+    font-style: normal;
+    line-height: 11px;
+    font-weight: normal;
+}
+
+ul li a:hover, .ascii_art {
+    line-height: 1;
+    color: #d7ffd2;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow:
+                0 0 6px rgba(202,228,225,0.92),
+                0 0 30px rgba(30,232,142,0.34),
+                0 0 12px rgba(30,232,142,0.52),
+                0 0 21px rgba(30,232,142,0.92),
+                0 0 34px rgba(30,232,142,0.78),
+                0 0 54px rgba(30,232,142,0.92);
+    }
+    to {
+        text-shadow:
+                0 0 6px rgba(202,228,225,0.98),
+                0 0 30px rgba(202,228,225,0.42),
+                0 0 12px rgba(30,232,142,0.58),
+                0 0 22px rgba(30,232,142,0.84),
+                0 0 38px rgba(30,232,142,0.88),
+                0 0 60px rgba(30,232,142,1);
+    }
 }
