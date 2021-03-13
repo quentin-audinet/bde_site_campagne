@@ -38,29 +38,6 @@ h2 {
     font-family: caribbean;
 }
 
-
-/* ---- HEADER ---- */
-header {
-    border: 2px solid white;
-    margin-bottom: 50px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    margin: 0px 50px;
-}
-
-nav ul li {
-    padding: 20px 10px;
-}
-nav ul li a {
-    font-family: Consolas;
-    color: white;
-    font-size: 2em;
-}
-
 /* ---- CORPS ---- */
 
 aside {
@@ -70,7 +47,7 @@ aside {
 }
 
 #left_panel {
-    flex: 2;
+    width: 25%;
     display: flex;
     flex-direction: column;
 }
@@ -82,10 +59,16 @@ aside {
 #chat {
     position: relative;
     flex: 2;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.message {
+    display: block;
 }
 
 .fa-paper-plane {
-    color: #00a6ff;
+    color: #0fbbbb;
     width: 40px;
     height: 40px;
 }
@@ -107,7 +90,7 @@ form {
 /* ---- CLASSEMENT ---- */
 
 #classement {
-    flex: 2;
+    width: 16%;
 }
 
 .ranks {
@@ -116,8 +99,8 @@ form {
 }
 
 #main_content {
-    flex: 3;
     margin: 0 4%;
+    width: 54%;
 }
 
 .ascii_art {
@@ -128,31 +111,4 @@ form {
     font-style: normal;
     line-height: 11px;
     font-weight: normal;
-}
-
-ul li a:hover, .ascii_art {
-    line-height: 1;
-    color: #d7ffd2;
-    animation: neon .08s ease-in-out infinite alternate;
-}
-
-@keyframes neon {
-    from {
-        text-shadow:
-                0 0 6px rgba(202,228,225,0.92),
-                0 0 30px rgba(30,232,142,0.34),
-                0 0 12px rgba(30,232,142,0.52),
-                0 0 21px rgba(30,232,142,0.92),
-                0 0 34px rgba(30,232,142,0.78),
-                0 0 54px rgba(30,232,142,0.92);
-    }
-    to {
-        text-shadow:
-                0 0 6px rgba(202,228,225,0.98),
-                0 0 30px rgba(202,228,225,0.42),
-                0 0 12px rgba(30,232,142,0.58),
-                0 0 22px rgba(30,232,142,0.84),
-                0 0 38px rgba(30,232,142,0.88),
-                0 0 60px rgba(30,232,142,1);
-    }
 }

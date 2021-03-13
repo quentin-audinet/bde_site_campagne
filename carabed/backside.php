@@ -27,23 +27,13 @@ if(isset($_POST['message'])) {
         <meta charset="UTF-8" />
         <title class="t_welcome">Bienvenue !</title>
         <link rel="stylesheet" href="styles/back_acceuil.css" />
+        <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     </head>
 
     <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.php">Sortir</a></li>
-                <li><a href="#">Défis</a></li>
-                <li><a href="#">Pirates</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Aide</a></li>
-                <li><a href="logout.php">Déconnexion</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include "header.html"; ?>
 
     <div id="content">
 
