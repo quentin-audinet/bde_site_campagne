@@ -4,22 +4,20 @@ if(!isset($_SESSION['username'])) {
     header('Location:login.php');
 }
 
-function getLastMessages() {
-    require "../db/db_connect.php";
-    return $db->query("SELECT username, message, date FROM chat JOIN users ON user_id=users.id ORDER BY `date` DESC LIMIT 10");
-}
-function sendMessage($message) {
-    require "../db/db_connect.php";
-    $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
-    $req->execute(array(
+function sendMessage($message)
+{
+    if(!empty($message)) {
+        require "../db/db_connect.php";
+        $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
+        $req->execute(array(
             'id' => $_SESSION['id'],
-        'message' => $message
-    ));
+            'message' => $message
+        ));
+    }
 }
 
 if(isset($_POST['message'])) {
     sendMessage($_POST['message']);
-
 }
 ?>
 <!DOCTYPE html>
@@ -29,22 +27,13 @@ if(isset($_POST['message'])) {
         <meta charset="UTF-8" />
         <title class="t_welcome">Bienvenue !</title>
         <link rel="stylesheet" href="styles/back_acceuil.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     </head>
 
     <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.php">Sortir</a></li>
-                <li><a href="#">Défis</a></li>
-                <li><a href="#">Pirates</a></li>
-                <li><a href="#">Chat</li>
-                <li><a href="#">Aide</a></li>
-                <li><a href="logout.php">Déconnexion</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php include "header.html"; ?>
 
     <div id="content">
 
@@ -55,19 +44,22 @@ if(isset($_POST['message'])) {
 
             <aside id="chat">
                 <h2>Chat</h2>
-                <p>
-                    <script>
-                        setTimeout("window.location.href='backside.php';",15000);
-                    </script>
-                <?php
-                $messages = getLastMessages();
-                while($row = $messages->fetch()) {
-                    print("<b>".$row['username'] . "</b> >> " . $row['message'] . "<br/>");
-                }
-                ?>
-                </p>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $("#mini_chat").load("get_messages.php",{});
+                       const refreshId = setInterval(function () {
+                               $("#mini_chat").load("get_messages.php",{});},5000);
+                       $.ajaxSetup({
+                           cache:false
+                       });
+                    });
+                </script>
+
+                <div id="mini_chat">
+                </div>
                 <form action="" method="post">
-                    <input name="message" type="text" /><button style="background: none;border: none"><img src="../images/telecom_paristech.jpg" width="20px" height="20px" /></button>
+                    <input id="message" name="message" type="text" /><button style="background: none;border: none"><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></button>
                 </form>
             </aside>
         </section>
