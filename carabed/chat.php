@@ -5,6 +5,7 @@ if(empty($_SESSION)) {
 function sendMessage($message)
 {
     if(!empty($message)) {
+        require "../db/db_connect.php";
         $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
         $req->execute(array(
         'id' => $_SESSION['id'],
