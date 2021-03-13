@@ -6,6 +6,6 @@ function getLastMessages() {
 
 $messages = getLastMessages();
 while($row = $messages->fetch()) {
-    print("<b>".$row['username'] . "</b> >> " . $row['message'] . "<br/>");
+    print("<span class='message'><b>".$row['username'] . "</b> >> " . $row['message'] . "</span><br/>");
 }
 ?>
