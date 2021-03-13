@@ -1,11 +1,10 @@
 <?php
-
+if(empty($_SESSION)) {
+    require "conf.php";
+}
 function sendMessage($message)
 {
     if(!empty($message)) {
-        if(empty($_SESSION)) {
-            require "conf.php";
-        }
         $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
         $req->execute(array(
         'id' => $_SESSION['id'],
