@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Consolas';
+    src: url("../../fonts/Consolas.ttf");
+}
+
+@font-face {
+    font-family: 'Caribbean';
+    src: url("../../fonts/Caribbean.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 50px;
+    height: 82%;
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 80%;
+    border-bottom: none;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.user {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.other {
+    align-self: flex-start;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.date {
+    color: #7d7d7d;
+    font-size: 0.8em;
+}
+
+.username {
+    font-size: 1.2em;
+    color: #ffbf00;
+    font-family: Caribbean;
+}
+
+.content {
+    color: #15a815;
+    font-size: 1.5em;
+    font-family: Consolas;
+    padding: 5px 15px;
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    margin: 50px;
+}
+
+#message {
+    flex: 1 ;
+}
+
+.fa-paper-plane {
+    color: #0fbbbb;
+}
