@@ -28,7 +28,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
 <head>
     <meta charset="UTF-8" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles/register.css" />
+    <link rel="stylesheet" href="styles/login.css" />
 </head>
 
 <body>
@@ -43,7 +43,7 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     <input id="username" name="username" type="text" required><br/><br/>
     <label for="password">Mot de passe:</label>
     <input id="password" name="password" type="password" required><br/><br/>
-    <input id="remember" name="remember" type="checkbox" /><label for="remember">Qu'on se souvienne de moi</label><br/><br/>
+    <input id="remember" name="remember" type="checkbox" checked/><label for="remember">Qu'on se souvienne de moi</label><br/><br/>
     <input type="submit" value="Entrer"><br/><br/>
     <a href="register.php">Je n'ai pas encore prêté serment</a>
 </form>
