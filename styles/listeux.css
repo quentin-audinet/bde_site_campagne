@@ -1,0 +1,104 @@
+@font-face
+{
+    font-family: "Caribbean";
+    src: url("../fonts/Caribbean.ttf");
+}
+
+@media screen {
+    #bloc_titre {
+        font-size : xx-large;
+        text-align : center;
+        font-family: "Caribbean";
+        z-index: 5;
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flippingcard {
+        position: relative;
+        width: 16%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+}
+
+@media handeld {
+    #bloc_titre {
+        font-size : large;
+        text-align : center;
+        font-family: "Caribbean";
+        z-index: 5;
+    }
+
+    #cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flippingcard {
+        position: relative;
+        width: 80%;
+    }
+}
+
+
+
+img {
+    border-radius: 1em;
+}
+
+
+
+div[class^="card"] {
+    height: 300px;
+    width: 300px;
+    perspective-origin: center bottom;
+    position: sticky;
+}
+
+div[class^="card"] [class^="face"] {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+div[class^="card"] .face-front {
+    background-color: #ED7E10;
+    z-index: 5;
+}
+
+div[class^="card"] p {
+    height: 280px;
+    width: 280px;
+    font-family: "PiecesOfEight";
+    font-size: large;
+    overflow: auto;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+div[class^="card"] .face-back {
+    background-color: burlywood;
+    z-index: 0;
+    transform: rotateY(-180deg);
+}
+
+div[class^="card"].rotated .face-front {
+    z-index: 5;
+    transform: rotateY(180deg);
+}
+div[class^="card"].rotated .face-back {
+    z-index: 10;
+    transform: rotateY(0deg);
+}
