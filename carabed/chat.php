@@ -1,11 +1,11 @@
 <?php
-
+if(empty($_SESSION)) {
+    require "conf.php";
+}
 function sendMessage($message)
 {
     if(!empty($message)) {
-        if(empty($_SESSION)) {
-            require "conf.php";
-        }
+        require "../db/db_connect.php";
         $req = $db->prepare("INSERT INTO chat (`user_id`, `message`) VALUES (:id, :message)");
         $req->execute(array(
         'id' => $_SESSION['id'],
@@ -43,7 +43,6 @@ if(isset($_POST['message'])) {
 <?php include "header.html"; ?>
 <div id="container">
     <?php
-    require "conf.php";
     $messages = $db->query("SELECT username, message, `date` FROM chat JOIN users ON user_id=users.id ORDER BY `date` ASC");
     while($row = $messages->fetch()) {
         $class = $row['username']==$_SESSION['username']?"user":"other";

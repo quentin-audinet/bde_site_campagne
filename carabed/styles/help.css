@@ -3,6 +3,10 @@
     src: url("../../fonts/Consolas.ttf");
 }
 
+@font-face {
+    font-family: 'Caribbean';
+    src: url("../../fonts/Caribbean.ttf");
+}
 
 
 html {
@@ -11,7 +15,14 @@ html {
 
 body {
     background-color: black;
+    font-family: Consolas   ;
     color: white;
     margin: 50px;
     height: 80%;
+}
+
+#hint_images {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }

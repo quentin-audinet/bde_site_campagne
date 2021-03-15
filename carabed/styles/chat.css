@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 30px;
+    width: 70%;
 }
 
 .user {
@@ -62,6 +63,7 @@ body {
     color: #15a815;
     font-size: 1.5em;
     font-family: Consolas;
+    word-wrap: break-word;
     padding: 5px 15px;
     margin: 5px;
 }

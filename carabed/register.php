@@ -48,7 +48,29 @@ if(isset($erreur)) {
     <label for="username">Choisis ton nom de pirate:</label><input  id="username" name="username" type="text" required/><br/><br/>
     <label for="password">Trouve ton mot de passe:</label><input id="password" name="password" type="password" required/><br/><br/>
     <input id="serment" name="serment" type="checkbox" required/><label for="serment"> Je prête serment (Ceci n'engage en rien à voter pour Pirate des Carabed, sache seulement que je sais où tu habites et que si on perd je serai de très mauvaise humeur)</label><br/><br/>
-    <input type="submit" value="Valider" />
+    <div id="buttons">
+        <input type="submit" value="Valider" class="button" />
+        <button id="back" class="button">Retour</button>
+    </div>
 </form>
+<script>
+    const serment_box =document.getElementById("serment");
+    serment_box.oninvalid = (e) => {
+        e.target.setCustomValidity("");
+        if(!e.target.validity.valid) {
+            e.target.setCustomValidity("Cocher cette case est fortement recommandé.");
+        }
+    };
+    serment_box.oninput = (e) => {
+        e.target.setCustomValidity("");
+    }
+
+
+    document.getElementById("back").addEventListener("click", (event) => {
+        event.preventDefault();
+        document.location = "login.php";
+    })
+</script>
+
 </body>
 </html>

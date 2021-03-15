@@ -6,6 +6,7 @@
     <title class="t_sponsors">Nos sponsors</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/partners.css" />
+    <link rel="preload" href="images/chest_opening-min.gif" as="image" type="image/gif" />
 </head>
 
 <body>
