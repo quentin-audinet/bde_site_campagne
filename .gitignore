@@ -1,2 +1,2 @@
-db/*
-phpmyadmin/*
+db/db_connect.php
+phpmyadmin/
