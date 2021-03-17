@@ -4,6 +4,10 @@
     src: url("../fonts/Caribbean.ttf");
 }
 
+.flippingcard {
+    cursor: pointer;
+}
+
 @media screen {
     #bloc_titre {
         font-size : xx-large;
