@@ -19,7 +19,7 @@
         success: function (data) {
             if(data==="success")
                 location.href = "index.php";
-            if(data=="failed") {
+            else {
                 alert("Identifiants invalides !\nRetour à la page d'acceuil.");
                 location.href = "../index.php";
             }

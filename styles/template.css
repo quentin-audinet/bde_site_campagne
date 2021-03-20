@@ -143,7 +143,9 @@ footer * {
 footer nav ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
     align-items: center;
+    margin: 5px 5%;
 }
 
 footer nav ul ul {
