@@ -22,13 +22,6 @@
 
 <?php include "templates/header.php"; ?>
 
-
-<?php
-$pass = "Sh@d€n€$$.750.Cb";
-print password_hash($pass, PASSWORD_DEFAULT);
-?>
-
-
 <h1>Sérieux tu veux lire le Règlement Général sur la Non Protection des Données ???</h1>
 <h6>Au moins je l'aurai pas écrit pour rien...</h6>
 
