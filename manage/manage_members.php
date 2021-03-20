@@ -68,7 +68,7 @@ if(!isset($_SESSION['maintainer'])) {
         ?>
         <form enctype="multipart/form-data" action="add_member.php" method="post" class="form-add-member">
             <img id="preview" width="50px" height="50px" src="../images/members/default.png" />
-            <input id="profil_pic" type="file" name="photo" accept="image/png, image/jpeg, image/jpg" onchange="previewFile(this,'preview','profil_pic');"/>
+            <input id="profil_pic" name="photo" type="file" accept="image/png, image/jpeg, image/jpg" onchange="previewFile(this,'preview','profil_pic');"/>
             <input type="text" name="name" placeholder="Nom" required/>
             <input type="text" name="nickname" placeholder="Surnom"/>
             <textarea name="desc" placeholder="Description"></textarea>

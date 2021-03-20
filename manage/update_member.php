@@ -9,8 +9,10 @@ $req = "UPDATE members SET nom=" . $db->quote($_POST['name'])
     . ", surnom=" . $db->quote($_POST['nickname'])
     . ", description=" . $db->quote($_POST['desc'])
     . (($_FILES['photo']['name']!='')?", photo=" . $db->quote($_FILES['photo']['name']):"")
-    . ", bureau=" . (isset($_POST['bureau'])?"'1'":"'0'") . " WHERE id=" . $_POST['id'];
+    . ", bureau=" . (isset($_POST['bureau'])?"'1'":"'0'") . " WHERE id=" . $db->quote($_POST['id']);
 
+
+$upload_dir = '../images/members/';
 if($_FILES['photo']['name']!='') {
     include "save_image.php";
 }
