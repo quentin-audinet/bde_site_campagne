@@ -14,8 +14,24 @@
         <p>Le Bon la Bed et le Truand - Les Listeux</p>
     </div>
 
-    <div id="cards">
+    <h1>Le bureau</h1>
+        <div id="bureau_cards">
+            <?php
+            include "scripts/show_bureau.php";
+            ?>
+
+        </div>
+
+    <h1>Les membres</h1>
+        <div id="members_cards">
+            <?php
+            include "scripts/show_members.php";
+            ?>
+        </div>
+
+<!--
         <div class="flippingcard">
+            <h2>Will Turner</h2>
             <div class="card-single">
                 <div class="face-front">
                     <img width = "300" height = "300" src="Page_photos/Images/William_Turner.jpg" alt="Will Turner">
@@ -58,6 +74,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php include "templates/footer.html";?>
 </body>
