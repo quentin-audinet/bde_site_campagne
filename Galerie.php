@@ -9,6 +9,20 @@
 <body>
     <?php include "templates/header.php";?>
     <div id="images_zone">
+
+        <?php
+        include "db/db_connect.php";
+        $response = $db->query("SELECT * FROM photos ORDER BY id DESC");
+        while($row = $response->fetch()) {
+            print('
+            <div class="image_div">
+            <img class = "image" src="images/photos/' . $row['nom'] . '"/>
+            <div class="description">' . $row['description'] . '</div>
+        </div>
+            ');
+        }
+        ?>
+
         <div class="image_div">
             <img class = "image" src="Galerie_photos/Bateau.jpg"/>
             <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
