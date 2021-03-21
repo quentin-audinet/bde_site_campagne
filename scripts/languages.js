@@ -16,6 +16,7 @@ dictionary.add("t_sponsors", "Sponsors", "Partners");
 dictionary.add("t_photos", "Espace photos", "Photos");
 dictionary.add("t_contact","Nous contacter", "Contact us");
 dictionary.add("t_cgu", "Conditions générales d'utilisation", "Terms of use");
+dictionary.add("t_news", "News", "News");
 
 
 
