@@ -8,7 +8,7 @@ let dictionary = {
     }
 };
 /* ----- DECLARER ICI TOUS LES TEXTES ----- */
-dictionary.add("t_acceuil","Acceuil","Home");
+dictionary.add("t_acceuil","Accueil","Home");
 dictionary.add("t_agenda", "Agenda", "Agenda");
 dictionary.add("t_defis", "Défis", "Challenges");
 dictionary.add("t_membres", "Membres", "Members");
@@ -17,6 +17,7 @@ dictionary.add("t_photos", "Espace photos", "Photos");
 dictionary.add("t_contact","Nous contacter", "Contact us");
 dictionary.add("t_cgu", "Conditions générales d'utilisation", "Terms of use");
 dictionary.add("t_news", "News", "News");
+dictionary.add("t_carabed-defis", "Nos défis", "Our challenges");
 
 
 
