@@ -62,7 +62,7 @@ if(!isset($_SESSION['maintainer'])) {
             <img id="preview" width="150px" src="../images/members/default.png" />
             <input id="photo" type="file" name="photo" accept="image/png, image/jpeg, image/jpg" onchange="previewFile(this,'preview','photo');" required/>
             <textarea name="description" placeholder="Description" required></textarea>
-            <button class="add-btn"><i class="fa fa-user-plus fa-2x"></i></button>
+            <button class="add-btn"><i class="fa fa-plus-square fa-2x"></i></button>
         </form>
 
 

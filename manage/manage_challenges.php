@@ -27,12 +27,28 @@ if(!isset($_SESSION['maintainer'])) {
         <?php include "../db/db_connect.php";
         $response = $db->query("SELECT * FROM challenges");
         while($row = $response->fetch()) {
+            $id = $row['id'];
             print('
-            
+            <div class="challenges">
+                <form action="update_challenge.php" method="post">
+                    <input type="hidden" name="id" value="' . $id . '" />
+                    <input type="date" name="date" value="'.$row['date'].'" />
+                    <input type="text" name="title" value="'.$row['titre'].'" />
+                    <label for="challengers'.$id.'">Participants:</label><input type="text" name="challengers" id="challengers'.$id.'" value="'.$row['participants'].'"/>
+                    <textarea name="description">'.$row['description'].'</textarea>
+                    <label for="points'.$id.'">Points:</label> <input type="number" name="points" id="points'.$id.'" value="'.$row['points'].'"/>
+                    <button class="edit-btn"><i class="fa fa-edit fa-2x"></i> </button>
+                </form>
+                <form action="remove_challenge.php" method="post">
+                    <input type="hidden" name="id" value="'. $id.'" />
+                    <button class="remove-btn"><i class="fa fa-trash fa-2x"></i> </button>
+                </form>
+            </div>
             ');
         }
         ?>
 
+        <h2>Ajouter un défi</h2>
         <form enctype="multipart/form-data" action="add_challenge.php" method="post">
             <input type="date" name="date" />
             <input type="text" name="title" placeholder="Titre du défi"/>
@@ -45,7 +61,7 @@ if(!isset($_SESSION['maintainer'])) {
             </select>
             <input id="video-opt" type="text" name="src_video"/>
             <input id="image-opt" type="file" name="photo" hidden/>
-            <button><span class="fa fa-edit"></span> </button>
+            <button><span class="fa fa-plus-square"></span> </button>
         </form>
 
         <script>
