@@ -1,0 +1,42 @@
+
+h1 {
+    margin-left: 30px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex inline;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.form-add-member {
+    margin: 30px 50px;
+    display: flex;
+    justify-content: start;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.remove-btn {
+    color: #b30000;
+}
+
+.edit-btn {
+    color: darkblue;
+}
+
+.add-btn {
+    color: #02ec02;
+}

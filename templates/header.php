@@ -23,7 +23,6 @@
                 print("<li><a href='carabed/backside.php'>Backside</a></li>");
             }?>
 
-            <!-- Passer la langue dans l'url -->
             <script>
                 for(let link of document.querySelectorAll("#banner ul li a")) {
                     link.addEventListener("click", () => {
