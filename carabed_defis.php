@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <title class="t_carabed-defis">Nos défis</title>
     <link rel="stylesheet" href="styles/template.css" />
+    <link rel="stylesheet" href="styles/carabed_defis.css" />
 </head>
 
 <body>
@@ -31,9 +32,9 @@ while($row = $response->fetch()) {
     $challengers_list.="</ul>";
     print('
     <div class="challenge">
-    <h3>'.$date.' - '.$title.' : '.$points.' pts</h3>
-    '.$src.$challengers_list.'
-    <p>'.$description.'</p>
+    <h3>'.$date.' - '.$title.' : '.$points.' pts</h3><div class="details">
+    <div class="source">'.$src.'</div><div class="challengers"><h4>Participants:</h4>'.$challengers_list.'</div>
+    <div class="description"><h4>Description:</h4><p>'.$description.'</p></div></div>
     </div>
     <hr width="90%">
     ');

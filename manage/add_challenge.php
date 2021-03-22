@@ -16,7 +16,7 @@ $source="";
 if($type == "'video'") {
     $source = $db->quote($_POST['src_video']);
 } else if ($type == "'image'") {
-    $source = $db->quote("<img src='images/photos/".$_FILES['photo']['name']."' alt='photo' width='560'/>");
+    $source = $db->quote("<img src='images/photos/".$_FILES['photo']['name']."' alt='photo' height='315'/>");
     $upload_dir = '../images/photos/';
     include "save_image.php";
 } else{
