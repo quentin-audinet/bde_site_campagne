@@ -15,7 +15,7 @@
             <li><a href="index.php"><span class="t_acceuil" /></a></li>
             <li><a href="news.php"><span class="t_news" /></a> </li>
             <li><a href="#"><span class="t_agenda" /></a></li>
-            <li><a href="#"><span class="t_defis" /></a> </li>
+            <li><a href="defis.php"><span class="t_defis" /></a> </li>
             <li><a href="Listeux.php"><span class="t_membres" /></a> </li>
             <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
             <li><a href="Galerie.php"><span class="t_photos" /></a> </li>
