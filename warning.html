@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #0f2029;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 16px solid #f7ff00;
+            margin: 0px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            font-family: "Lato Light";
+        }
+
+        #warning {
+            display: flex;
+
+        }
+
+        #ic-warning {
+            align-self: flex-start;
+            width: 100px;
+            margin-right: 30px;
+        }
+
+        .warning-title {
+            font-size: 2.5em;
+            font-weight: lighter;
+            line-height: 1.2;
+            color: #cccccc;
+            margin: 0;
+        }
+
+        .warning-message {
+            color: white;
+            display: inline;
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+
+        #buttons {
+            align-self: flex-end;
+        }
+
+        #go-back-btn {
+            background-color: #0044cc;
+            padding: 5px 20px;
+            margin: 10px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #go-back-btn:hover {
+            background-color: #0000a3;
+        }
+
+        #go-back-btn:active {
+            background-color: #000066;
+        }
+
+        #continue-btn {
+            background-color: #333;
+            padding: 5px 20px;
+            margin: 10px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #continue-btn:hover {
+            background-color: #444;
+        }
+
+        #continue-btn:active {
+            background-color: #555;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="content">
+<div id="warning">
+    <img id="ic-warning" src="images/cert-error.svg" alt="warning" /><span><h1 class="warning-title">Warning: Potential Security Risk Ahead</h1><div class="warning-message">
+    <p>Your browser detected a potential security threat and did not continue to this website. If you visit this site, attackers could try to steal information like your passwords, emails, or credit card details.</p>
+    <br/><h3>What can you do about it?</h3>
+    <p>The issue is most likely with the website, and there is nothing you can do to resolve it.</p>
+    <p>If you are on a corporate network or using anti-virus software, you can reach out to the support teams for assistance. You can also notify the website’s administrator about the problem.</p>
+</div></span>
+</div>
+    <div id="buttons"><button id="go-back-btn">Go Back (Recommended)</button><button id="continue-btn">Continue</button></div>
+    <script>
+        document.getElementById("go-back-btn").addEventListener("click", () => {
+            document.location.href = "index.php";
+        });
+        document.getElementById("continue-btn").addEventListener("click", () => {
+            document.location.href="https://www.google.com";
+        });
+    </script>
+</div>
+</body>
+</html>
