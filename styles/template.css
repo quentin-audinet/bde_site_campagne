@@ -151,6 +151,7 @@ footer nav ul {
 footer nav ul ul {
     display: flex;
     flex-direction: column;
+    width: 150px;
 }
 
 footer nav ul ul li {
@@ -165,6 +166,8 @@ footer nav ul ul a:hover {
     border-bottom: 1px solid #E4DCC7;
 }
 #license {
+    display: flex;
+    align-items: center;
     margin-right: auto;
     font-family: "matura MT Script Capitals", arial;
 }
