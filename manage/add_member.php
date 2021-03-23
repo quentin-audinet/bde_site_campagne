@@ -16,10 +16,8 @@ if($_POST['nickname']!="") {
 if($_POST['desc']!="") {
     $req.="description, ";
 }
-if(isset($_POST['bureau'])) {
-    $req.="bureau, ";
-}
-$req.="nom) VALUES (";
+
+$req.="statut, nom) VALUES (";
 if($_FILES['photo']!="") {
     $req.= $db->quote($_FILES['photo']['name']).",";
 }
@@ -29,9 +27,8 @@ if($_POST['nickname']!="") {
 if($_POST['desc']!="") {
     $req.= $db->quote($_POST['desc']).",";
 }
-if(isset($_POST['bureau'])) {
-    $req.="1,";
-}
+
+$req.= $db->quote($_POST['statut']).",";
 $req.= $db->quote($_POST['name']).")";
 
 $upload_dir = '../images/members/';

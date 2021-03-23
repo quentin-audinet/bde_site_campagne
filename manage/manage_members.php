@@ -44,7 +44,6 @@ if(!isset($_SESSION['maintainer'])) {
         $data = $db->query("SELECT * FROM members");
         while($row = $data->fetch()) {
             $id = $row['id'];
-            $bureau = $row['bureau']==1?"checked":"";
             print('
             <div class="member">
                 <form enctype="multipart/form-data" action="update_member.php" method="post">
@@ -55,7 +54,11 @@ if(!isset($_SESSION['maintainer'])) {
                     <input name="name" type="text" value="' . $row['nom'] . '"/>
                     <input name="nickname" type="text" value="' . $row['surnom'] . '"/>
                     <textarea name="desc">' . $row['description'] . '</textarea>
-                    <label for="bureau'.$id.'">Bureau</label><input type="checkbox" id="bureau'.$id.'" name="bureau" '. $bureau . '/>
+                    <select name="statut">
+                        <option value="1" ' . ($row['statut']==1?"selected":"") . '>Bureau</option>
+                        <option value="2" ' . ($row['statut']==2?"selected":"") . '>Listeux</option>
+                        <option value="0" ' . ($row['statut']==0?"selected":"") . '>Membre</option>
+                    </select>
                     <button class="edit-btn"><i class="fa fa-edit fa-2x"></i></button>
                 </form>
                 <form action="remove_member.php" method="post">
@@ -72,7 +75,11 @@ if(!isset($_SESSION['maintainer'])) {
             <input type="text" name="name" placeholder="Nom" required/>
             <input type="text" name="nickname" placeholder="Surnom"/>
             <textarea name="desc" placeholder="Description"></textarea>
-            <label for="bureau">Bureau</label><input type="checkbox" id="bureau" name="bureau" />
+            <select name="statut">
+                <option value="1">Bureau</option>
+                <option value="2">Listeux</option>
+                <option value="0" selected>Membre</option>
+            </select>
             <button class="add-btn"><i class="fa fa-user-plus fa-2x"></i></button>
         </form>
 
