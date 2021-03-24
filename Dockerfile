@@ -6,7 +6,7 @@ RUN docker-php-ext-install pdo_mysql
 
 COPY .  /var/www/html/
 
-RUN chown -R www-data:www-data /var/www/html/images/photos /var/wwww/html/images/membres
+RUN chown -R www-data:www-data /var/www/html/images/photos /var/wwww/html/images/members
 
 EXPOSE 80
 
