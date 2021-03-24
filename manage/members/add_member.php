@@ -1,10 +1,9 @@
 <?php
 session_start();
 if(!isset($_SESSION['maintainer'])) {
-    header("Location:login.php");
+    header("Location:../login.php");
 }
-print_r($_POST);
-include "../db/db_connect.php";
+include "../../db/db_connect.php";
 $req = "INSERT INTO members (";
 
 if($_FILES['photo']!="") {
@@ -31,9 +30,9 @@ if($_POST['desc']!="") {
 $req.= $db->quote($_POST['statut']).",";
 $req.= $db->quote($_POST['name']).")";
 
-$upload_dir = '../images/members/';
+$upload_dir = '../../images/members/';
 if($_FILES['photo']['name']!='') {
-    include "save_image.php";
+    include "../save_image.php";
 }
 $db->exec($req);
 

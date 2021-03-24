@@ -1,0 +1,46 @@
+
+h1 {
+    margin-left: 30px;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    margin: 50px 50px;
+    flex-wrap: wrap;
+}
+
+.photo img {
+    margin-right: 30px;
+}
+
+form {
+    display: flex inline;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.form-add-photo {
+    margin: 70px 50px;
+    display: flex;
+    justify-content: start;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.remove-btn {
+    color: #b30000;
+}
+
+.edit-btn {
+    color: darkblue;
+}
+
+.add-btn {
+    color: #02ec02;
+}

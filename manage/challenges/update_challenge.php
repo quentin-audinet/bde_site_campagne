@@ -1,10 +1,10 @@
 <?php
 session_start();
 if(!isset($_SESSION['maintainer'])) {
-    header("Location:login.php");
+    header("Location:../login.php");
 }
 
-include "../db/db_connect.php";
+include "../../db/db_connect.php";
 
 $date = $db->quote($_POST['date']);
 $title = $db->quote($_POST['title']);

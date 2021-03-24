@@ -4,6 +4,12 @@
     font-family: "matura MT Script Capitals";
     src: url("../fonts/MATURASC.TTF");
 }
+
+@font-face {
+    font-family: PiecesOfEight;
+    src: url("../fonts/Pieces_of_Eight.ttf");
+}
+
 html {
     height: 100%;
 }
@@ -131,6 +137,11 @@ section {
     width: 80%;
 }
 
+.page-title {
+    font-family: PiecesOfEight;
+}
+
+
 footer {
     background-color: #2E2422;
 }
@@ -165,6 +176,7 @@ footer nav ul ul a {
 footer nav ul ul a:hover {
     border-bottom: 1px solid #E4DCC7;
 }
+
 #license {
     display: flex;
     align-items: center;

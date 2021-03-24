@@ -1,10 +1,10 @@
 <?php
 session_start();
 if(!isset($_SESSION['maintainer'])) {
-    header("Location:login.php");
+    header("Location:../login.php");
 }
 
-include "../db/db_connect.php";
+include "../../db/db_connect.php";
 $req = "UPDATE members SET nom=" . $db->quote($_POST['name'])
     . ", surnom=" . $db->quote($_POST['nickname'])
     . ", description=" . $db->quote($_POST['desc'])
@@ -13,8 +13,8 @@ $req = "UPDATE members SET nom=" . $db->quote($_POST['name'])
 
 
 if($_FILES['photo']['name']!='') {
-    $upload_dir = '../images/members/';
-    include "save_image.php";
+    $upload_dir = '../../images/members/';
+    include "../save_image.php";
 }
 $db->exec($req);
 header('Location:manage_members.php');
