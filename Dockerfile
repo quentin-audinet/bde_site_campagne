@@ -6,7 +6,7 @@ RUN docker-php-ext-install pdo_mysql
 
 COPY .  /var/www/html/
 
-RUN chown -R 777 /var/www/html/
+RUN chmod -R 777 /var/www/html/
 
 EXPOSE 80
 
