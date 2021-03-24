@@ -18,12 +18,11 @@
         data: 'mail=' + mail + '&password=' + password,
         success: function (data) {
             if(data==="success")
-                location.href = "index.php";
+                location.href = "members/manage_members.php";
             else {
                 alert("Identifiants invalides !\nRetour à la page d'acceuil.");
                 location.href = "../index.php";
             }
-
         }
     });
 </script>

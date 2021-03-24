@@ -1,0 +1,66 @@
+h1 {
+    margin-left: 30px;
+}
+
+.challenges {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.challenges div {
+    display: flex;
+    align-items: center;
+}
+
+.challenges input {
+    margin: 0 10px;
+}
+
+form {
+    display: flex inline;
+    align-items: center;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+#add-challenge-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+#add-challenge-form div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.form-add-member {
+    margin: 30px 50px;
+    display: flex;
+    justify-content: start;
+}
+
+#add-challenge-form input {
+    margin: 0 10px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.remove-btn {
+    color: #b30000;
+}
+
+.edit-btn {
+    color: darkblue;
+}
+
+.add-btn {
+    color: #02ec02;
+}
