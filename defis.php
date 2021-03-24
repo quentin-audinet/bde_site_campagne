@@ -68,6 +68,10 @@
 <script>
     image_carabed = document.getElementById("sabre-carabed");
     area_carabed = document.getElementById("area-carabed");
+
+
+    area_carabed.setAttribute("href",area_carabed.getAttribute("href")+"?lang="+lang);
+
     area_carabed.addEventListener("mouseover", () => {
         image_carabed.setAttribute("src","images/sabre_carabed.png");
         area_carabed.setAttribute("coords","112,619,141,586,190,550,258,508,223,452,220,430,231,418,252,416,282,424,307,440,332,465,417,387,506,275,586,125,632,134,696,115,780,58,762,136,702,243,615,343,508,434,368,520,380,581,377,625,353,687,311,726,254,743,200,738,165,720,118,670,114,687,96,702,74,707,50,696,41,676,47,647,74,629,100,635,89,602,95,589");

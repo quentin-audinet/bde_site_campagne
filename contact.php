@@ -13,6 +13,9 @@
 <body>
 
 <?php include "templates/header.php"; ?>
+
+<h1 class="page-title"><span class="t_contact_titre"></span> </h1>
+
 <div class="map_container">
     <canvas id="map_panel" width="1000" height="513"></canvas>
     <div class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>

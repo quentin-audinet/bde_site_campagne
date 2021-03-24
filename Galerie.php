@@ -8,6 +8,9 @@
 
 <body>
     <?php include "templates/header.php";?>
+
+    <h1 class="page-title"><span class="t_photos_titre"></span> </h1>
+
     <div id="images_zone">
 
         <?php

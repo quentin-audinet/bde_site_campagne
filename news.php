@@ -12,7 +12,7 @@
 <body>
 <?php include "templates/header.php";?>
 
-<h1 class="title">Toutes les news des Carabed</h1>
+<h1 class="page-title"><span class="t_news_titre"></span></h1>
 
 <?php
 include "db/db_connect.php";

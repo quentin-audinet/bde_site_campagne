@@ -15,6 +15,7 @@
     include "templates/header.php";?>
 
     <div class="sponsors_container">
+        <h1 class="page-title"><span class="t_sponsors_titre" /></h1>
         <div id="chest">
             <img id="chest_img" src="images/chest.png" alt="chest" />
             <script type="text/javascript" src="scripts/partners_anim_chest.js"></script>

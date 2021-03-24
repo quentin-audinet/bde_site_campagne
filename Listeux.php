@@ -10,9 +10,7 @@
     <?php include "templates/header.php";?>
     <script type="text/javascript" src="scripts/listeux_anim_card.js"></script>
 
-    <div id="bloc_titre">
-        <p>Le Bon la Bed et le Truand - Les Listeux</p>
-    </div>
+    <h1 class="page-title"><span class="t_membres_titre"></span> </h1>
 
     <h1>Le bureau</h1>
         <div id="bureau_cards">

@@ -12,7 +12,7 @@
 <body>
 <?php include "templates/header.php";?>
 
-<h1>Tous nos défis</h1>
+<h1 class="page-title"><span class="t_defis_titre"></span> </h1>
 
 <?php
 include "db/db_connect.php";
