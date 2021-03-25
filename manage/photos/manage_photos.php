@@ -52,7 +52,7 @@ if(!isset($_SESSION['maintainer'])) {
         while($row = $response->fetch()) {
             print('
             <div class="photo">
-                <img src="../../images/'. $row["nom"] . '" alt="photo" width="150px"/>
+                <img src="../../images/photos/'. $row["nom"] . '" alt="photo" width="150px"/>
                 <form action="update_photo.php" method="post">
                     <input type="hidden" name="id" value="' . $row["id"] . '" />
                     <input name="description" type="text" value="'. $row["description"] . '" />
