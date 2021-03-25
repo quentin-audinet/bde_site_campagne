@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- Ah enfin un curieux ! Une vieille légende raconte qu'un trésor se trouve sur ce site. Malheureusement j'ai perdu ce vieux fichier.....
+     Si je me souviens bien il s'intitulait "legende.txt". A tous les coups je l'avais caché dans un dossier "secret" pour éviter que quelqu'un ne tombe dessus.
+     Encore une bonne idée ça...-->
+
+<!-- Si tu es bloqué tu peux négocier un indice avec Quentin Audinet -->
 
 <html lang="fr">
 <head>
@@ -8,11 +13,6 @@
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/acceuil.css" />
 
-    <!-- Ah enfin un curieux ! Une vieille légende raconte qu'un trésor se trouve sur ce site. Malheureusement j'ai perdu ce vieux fichier.....
-         Si je me souviens bien il s'intitulait "legende.txt". A tous les coups je l'avais caché dans un dossier secret pour éviter que quelqu'un ne tombe dessus.
-         Encore une bonne idée ça...-->
-
-    <!-- Si tu es bloqué tu peux négocier un indice avec Quentin Audinet -->
 </head>
 
 <body>

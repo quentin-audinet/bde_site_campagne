@@ -9,8 +9,7 @@
     document.documentElement.lang = lang;
 </script>
 
-<header>
-    <nav id="banner">
+<header id="banner">
         <ul>
             <li><a href="index.php"><span class="t_acceuil" /></a></li>
             <li><a href="news.php"><span class="t_news" /></a> </li>
@@ -69,7 +68,6 @@
                 })
             }
         </script>
-    </nav>
 </header>
 
 <section class="content">

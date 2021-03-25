@@ -37,7 +37,7 @@ if(!isset($_SESSION['maintainer'])) {
                 <option value="video">Vidéo</option>
                 <option value="image">Image</option>
             </select>
-            <input id="video-opt" type="text" name="src_video" placeholder="code de la vidéo (embed code)"/>
+            <input id="video-opt" type="text" name="src_video" placeholder="code de la vidéo (embed code)" title="En général, faire clic droit sur la vidéo pour obtenir le code d'intégration"/>
             <input id="image-opt" type="file" name="photo" hidden/>
             <button class="add-btn"><span class="fa fa-plus-square fa-2x"></span> </button></div>
         </form>

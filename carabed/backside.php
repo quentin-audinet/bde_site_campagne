@@ -38,9 +38,6 @@ if(isset($_POST['message'])) {
     <div id="content">
 
         <section id="left_panel">
-            <aside id="profile">
-                <h2>Profil</h2>
-            </aside>
 
             <aside id="chat">
                 <h2>Chat</h2>

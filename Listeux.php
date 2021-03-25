@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/listeux.css" />
     <link rel="stylesheet" href="styles/template.css" />
-    <title>Le Bon La Bed et le Truand - Les Listeux</title>
+    <title>Les Listeux</title>
 </head>
 
 <body>

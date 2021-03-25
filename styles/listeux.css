@@ -127,7 +127,6 @@ div[class^="card"] .face-front {
 div[class^="card"] p {
     height: 280px;
     width: 280px;
-    font-family: "PiecesOfEight";
     font-size: large;
     overflow: auto;
     margin: 20px;
