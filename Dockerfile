@@ -10,6 +10,8 @@ RUN mkdir /var/www/html/images/members /var/www/html/images/photos
 
 RUN chown -R www-data:www-data /var/www/html/images /var/www/html/images/photos /var/www/html/images/members
 
+RUN chmod 777 /var/www/html/images
+
 COPY . /var/www/html/
 
 EXPOSE 80
