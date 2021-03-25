@@ -7,7 +7,6 @@ if(!isset($_SESSION['maintainer'])) {
 include "../../db/db_connect.php";
 $req = "DELETE FROM challenges WHERE id=" . $db->quote($_POST['id']);
 $db->exec($req);
-print($req);
-//header('Location:manage_challenges.php');
+header('Location:manage_challenges.php');
 
 ?>
