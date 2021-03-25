@@ -8,9 +8,9 @@ RUN mkdir /var/www/html/images
 
 RUN mkdir /var/www/html/images/members /var/www/html/images/photos
 
-COPY .  /var/www/html/
+RUN chown -R www-data:www-data /var/www/html/images /var/www/html/images/photos /var/www/html/images/members
 
-RUN chown -R www-data:www-data /var/www/html/images/photos /var/www/html/images/members
+COPY . /var/www/html/
 
 EXPOSE 80
 
