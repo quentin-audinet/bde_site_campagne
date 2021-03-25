@@ -71,10 +71,10 @@ if(!isset($_SESSION['maintainer'])) {
                     <textarea name="description" rows="3" cols="50">'.$row['description'].'</textarea></div><div>
                     <label for="points'.$id.'">Points:</label> <input type="number" name="points" id="points'.$id.'" value="'.$row['points']. '"/>
                     <button class="edit-btn"><i class="fa fa-edit fa-2x"></i> </button>
-                    <form action="remove_challenge.php" method="post">
+                    </div>
+                </form><form action="remove_challenge.php" method="post">
                     <input type="hidden" name="id" value="' . $id.'" />
                     <button class="remove-btn"><i class="fa fa-trash fa-2x"></i> </button>
-                </form></div>
                 </form>
 
             </div>
