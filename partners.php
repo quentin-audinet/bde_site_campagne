@@ -20,16 +20,9 @@
             <img id="chest_img" src="images/chest.png" alt="chest" />
             <script type="text/javascript" src="scripts/partners_anim_chest.js"></script>
         </div>
-        <a href="#"><img id="logo_0" class="logo" src="images/telecom_paristech.jpg" alt="telecom" /></a>
-        <a href="#"><img id="logo_1" class="logo" src="images/jack.jpg" alt="jack d" /></a>
-        <a href="#"><img id="logo_2" class="logo" src="images/bnp.jpg" alt="bnp" /></a>
-        <a href="#"><img id="logo_3" class="logo" src="images/telecom_paristech.jpg" alt="telecom" /></a>
-        <a href="#"><img id="logo_4" class="logo" src="images/jack.jpg" alt="jack d" /></a>
-        <a href="#"><img id="logo_5" class="logo" src="images/telecom_paristech.jpg" alt="telecom" /></a>
-        <a href="#"><img id="logo_6" class="logo" src="images/jack.jpg" alt="jack d" /></a>
-        <a href="#"><img id="logo_7" class="logo" src="images/bnp.jpg" alt="bnp" /></a>
-        <a href="#"><img id="logo_8" class="logo" src="images/telecom_paristech.jpg" alt="telecom" /></a>
-        <a href="#"><img id="logo_9" class="logo" src="images/jack.jpg" alt="jack d" /></a>
+        <a href="#"><img id="logo_0" class="logo" src="images/evs_logo.png" alt="telecom" /></a>
+        <a href="#"><img id="logo_1" class="logo" src="images/cityscoot_logo.png" alt="jack d" /></a>
+        <a href="#"><img id="logo_2" class="logo" src="images/ocs_logo.png" alt="bnp" /></a>
 
     </div>
 

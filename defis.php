@@ -19,6 +19,8 @@
         .logo-liste {
             align-self: center;
             margin: auto;
+            width: 400px;
+            height: 400px;
         }
 
         #sabres {

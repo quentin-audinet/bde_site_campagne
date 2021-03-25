@@ -16,8 +16,6 @@ RUN chown -R www-data:www-data /var/www/html/images /var/www/html/images/photos 
 
 RUN cp -r /var/www/html/tmp/* /var/www/html/images/
 
-RUN rm -r /var/www/html/tmp
-
 EXPOSE 80
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
