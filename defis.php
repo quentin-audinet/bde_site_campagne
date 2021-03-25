@@ -48,7 +48,7 @@
 <?php include "templates/header.php";?>
 
 <div id="container">
-    <img class="logo-liste" src="images/telecom_paristech.jpg" height="200"/>
+    <img class="logo-liste" src="images/logo_autres.png" height="200"/>
     <div id="sabres">
         <img id="sabre-autres" src="images/sabre_autres_min.png"/>
 
@@ -59,7 +59,7 @@
         </map>
 
     </div>
-    <img class="logo-liste" src="images/telecom_paristech.jpg" height="200"/>
+    <img class="logo-liste" src="images/logo_carabed.png" height="200"/>
 
 </div>
 

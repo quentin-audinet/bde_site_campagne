@@ -21,14 +21,15 @@ const move_logos = () => {
     let id=null;
     let logos_obj = document.getElementsByClassName("logo");
     let logos = [];
-    const positions = [new Point(4,20),
+    const positions = [
+        new Point(23,15),
+        new Point(23,15),
+        new Point(61,15),
+        new Point(61,15),
+        new Point(42,12),
+        new Point(42,12),
         new Point(4,20),
-        new Point(23,15),
-        new Point(23,15),
-        new Point(42,12),
-        new Point(42,12),
-        new Point(61,15),
-        new Point(61,15),
+        new Point(4,20),
         new Point(80,20),
         new Point(80,20)];
 
