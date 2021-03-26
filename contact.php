@@ -18,9 +18,9 @@
 
 <div class="map_container">
     <canvas id="map_panel" width="1000" height="513"></canvas>
-    <div class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
-    <div class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
-    <div class="mail"><a href="#"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
+    <div class="facebook"><a href="https://www.facebook.com/Pirates-des-Carabed-112635134247893"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+    <div class="instagram"><a href="https://www.instagram.com/carabed_  "><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></div>
+    <div class="mail"><a href="mailto:piratedescarabed@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></div>
     <div class="<?php if(isset($pass)) {echo 'un'; } ?>lock"><a href="#"><i class="fa fa-<?php if(isset($pass)) {echo 'un'; } ?>lock fa-2x" aria-hidden="true"></i></a></div>
 
     <!-- Il y a peut être des choses à découvrir sur ce site... -->

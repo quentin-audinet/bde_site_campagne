@@ -1,3 +1,12 @@
+<?php
+$today = time();
+$release = mktime(4,4,0,3,31,2021);
+if($release - $today > 0) {
+    header("Location:countdown.html");
+}
+?>
+
+
 <script>
     //Définir la langue sur français si aucune n'est définie
     const queryString = window.location.search;
