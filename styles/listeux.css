@@ -65,6 +65,7 @@ h1 {
     }
 
     .flippingcard {
+        align-self: flex-end;
         position: relative;
         width: 300px;
         margin-right: 4%;
