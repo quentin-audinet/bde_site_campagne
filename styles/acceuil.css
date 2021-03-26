@@ -41,13 +41,7 @@
     z-index: 1;
     bottom: -24%;
 }
-@media screen and (min-width: 1550px) {
-    #acceuil p {
-        font-size: 4.25em;
-        line-height: 93px   ;
-    }
-    
-}
+
 
 .neon__text {
      line-height: 1;
