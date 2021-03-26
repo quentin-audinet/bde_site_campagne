@@ -2,7 +2,7 @@
 $today = time();
 $release = mktime(4,4,0,3,31,2021);
 if($release - $today > 0) {
-    header("Location:countdown.html");
+    print("<script>location.href = 'countdown.html'</script>");
 }
 ?>
 
