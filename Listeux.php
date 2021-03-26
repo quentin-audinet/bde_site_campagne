@@ -27,7 +27,7 @@
         ?>
     </div>
 
-    <h1>Les membres</h1>
+    <h1>Les soutiens</h1>
         <div id="members_cards">
             <?php
             include "scripts/show_members.php";

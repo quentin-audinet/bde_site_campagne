@@ -25,27 +25,6 @@
             ');
         }
         ?>
-
-        <div class="image_div">
-            <img class = "image" src="Galerie_photos/Bateau.jpg"/>
-            <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
-        </div>
-        <div class="image_div">
-            <img class = "image" src="Galerie_photos/Boussole.jpeg"/>
-            <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
-        </div>
-        <div class="image_div">
-            <img class = "image" src="Galerie_photos/Jack_sparrow.jpg"/>
-            <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
-        </div>
-        <div class="image_div">
-            <img class = "image" src="Galerie_photos/Photo_famille.jpg"/>
-            <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
-        </div>
-        <div class="image_div">
-            <img class = "image" src="Galerie_photos/Poupee_vaudou.jpg"/>
-            <div class="description">Aujourd'hui, Jack Sparrow mange son casse-croûte</div>
-        </div>
     </div>
     <?php include "templates/footer.html";?>
 </body>
