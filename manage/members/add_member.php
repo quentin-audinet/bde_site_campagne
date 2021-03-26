@@ -6,7 +6,7 @@ if(!isset($_SESSION['maintainer'])) {
 include "../../db/db_connect.php";
 $req = "INSERT INTO members (";
 
-if($_FILES['photo']!="") {
+if($_FILES['photo']['name']!="") {
     $req.="photo, ";
 }
 if($_POST['nickname']!="") {
@@ -17,7 +17,7 @@ if($_POST['desc']!="") {
 }
 
 $req.="statut, nom) VALUES (";
-if($_FILES['photo']!="") {
+if($_FILES['photo']['name']!="") {
     $req.= $db->quote($_FILES['photo']['name']).",";
 }
 if($_POST['nickname']!="") {
