@@ -1,0 +1,87 @@
+#images_zone {
+    position:relative;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+#images_zone .image_div {
+    position:relative;
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width:95%;
+}
+
+.image_container {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+
+    .image_div .description {
+        opacity: 0;
+        position: absolute;
+        font-size: 30px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .image_div:hover .description {
+        opacity: 1;
+        font-size: 30px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        transition: 0.5s ease;
+    }
+
+    .image_div:hover .image {
+        opacity: 0.33;
+        transition: 0.5s ease;
+    }
+
+}
+
+
+
+@media (max-width: 900px){
+
+    .image_div .description {
+        opacity: 0;
+        position: absolute;
+        font-size: 12px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .image_div:hover .description {
+        opacity: 1;
+        font-size: 12px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        transition: 0.5s ease;
+    }
+
+    .image_div:hover .image {
+        opacity: 0.33;
+        transition: 0.5s ease;
+    }
+
+}
+
