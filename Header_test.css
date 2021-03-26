@@ -217,42 +217,90 @@ section {
     width: 80%;
 }
 
-footer {
-    background-color: #2E2422;
+/* FOOTER */
+
+@media screen and (min-device-width: 600px) {
+    footer {
+        background-color: #2E2422;
+    }
+
+    footer * {
+        color: #E4DCC7;
+        text-decoration: none;
+    }
+
+    footer nav ul {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    footer nav ul ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav ul ul li {
+        margin: 2px 3px;
+    }
+
+    footer nav ul ul a {
+        text-decoration: none;
+    }
+
+    footer nav ul ul a:hover {
+        border-bottom: 1px solid #E4DCC7;
+    }
+    #license {
+        margin-right: auto;
+        font-family: "matura MT Script Capitals", arial;
+    }
+
+    #conditions {
+        margin-left: auto;
+    }
 }
 
-footer * {
-    color: #E4DCC7;
-    text-decoration: none;
+/* FOOTER : PHONES */
+
+@media screen and (max-device-width: 600px) {
+
+    footer {
+        background-color: #2E2422;
+        height: 140px;
+    }
+
+    footer nav {
+        height: 140px;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav ul li ul {
+        display: none;
+    }
+
+    footer nav ul li {
+        list-style-type: none;
+    }
+
+    footer * {
+        color: #E4DCC7;
+        text-decoration: none;
+    }
+
+    #license, #conditions {
+        margin: auto;
+        font-size: xx-large;
+        justify-content: center;
+    }
+
+    #conditions{
+        margin-top: 10px;
+    }
+
 }
 
-footer nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-
-footer nav ul ul {
-    display: flex;
-    flex-direction: column;
-}
-
-footer nav ul ul li {
-    margin: 2px 3px;
-}
-
-footer nav ul ul a {
-    text-decoration: none;
-}
-
-footer nav ul ul a:hover {
-    border-bottom: 1px solid #E4DCC7;
-}
-#license {
-    margin-right: auto;
-    font-family: "matura MT Script Capitals", arial;
-}
-
-#conditions {
-    margin-left: auto;
-}

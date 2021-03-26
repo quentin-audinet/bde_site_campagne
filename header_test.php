@@ -49,6 +49,8 @@
             </script>
         </ul>
 
+        <div id="menu_bar"></div>
+
         <div id="language_selector" class="dropdown">
             <button onclick="chgLanguage()" class="dropbtn">▼&ensp;<img class="flag_menu" src="images/fr_flag.png" alt="French" /></button>
             <div id="dropdown_language" class="dropdown_content">
@@ -92,4 +94,33 @@
     <div class="show_zone"></div>
 </section>
 
-<?php include "templates/footer.html";?>
+<footer>
+    <nav>
+        <ul>
+            <li id="license"><img src="images/ic_bde_blanc.png" alt="bde" />@Pirates des Carabed</li>
+            <li><ul>
+                    <li><a href="index.php"><span class="t_acceuil" /></a></li>
+                    <li><a href="news.php"><span class="t_news" /></a> </li>
+                    <li><a href="Agenda.php"><span class="t_agenda" /></a> </li>
+                    <li><a href="defis.php"><span class="t_defis" /></a> </li>
+                </ul></li>
+            <li><ul>
+                    <li><a href="Listeux.php"><span class="t_membres" /></a> </li>
+                    <li><a href="partners.php"><span class="t_sponsors" /></a> </li>
+                    <li><a href="Galerie.php"><span class="t_photos" /></a> </li>
+                    <li><a href="contact.php"><span class="t_contact" /></a> </li>
+                </ul></li>
+
+            <script>
+                for(let link of document.querySelectorAll("footer nav ul li ul li a")) {
+                    link.addEventListener("click", () => {
+                        link.setAttribute("href",link.getAttribute("href")+"?lang="+lang);
+                    });
+                }
+            </script>
+            <li id="conditions"><a href="rgnpd.php"><span class="t_cgu" /></a></li>
+        </ul>
+    </nav>
+</footer>
+
+<script type="text/javascript" src="scripts/languages.js"></script>
