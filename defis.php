@@ -9,6 +9,21 @@
 
     <style>
 
+        @font-face {
+            font-family: PiecesOfEight;
+            src: url("fonts/Pieces_of_Eight.ttf");
+        }
+
+        @font-face {
+            font-family: "matura MT Script Capitals";
+            src: url("fonts/MATURASC.TTF");
+        }
+
+        @font-face {
+            font-family: "disco";
+            src: url("fonts/DISCO1__.TTF");
+        }
+
         #container {
             text-align: center;
             display: flex;
@@ -19,6 +34,10 @@
         .logo-liste {
             align-self: center;
             margin: auto;
+        }
+
+        .logo-liste img {
+
             width: 400px;
             height: 400px;
         }
@@ -41,6 +60,44 @@
             bottom: 0;
             position: absolute;
         }
+
+        #qui-voter-link {
+            width: 100%;
+            text-align: center;
+            font-size: 4em;
+            font-family: PiecesOfEight;
+        }
+
+        #qui-voter-link a {
+            text-decoration: none;
+            color: #133f52;
+
+        }
+
+        #qui-voter-link a:hover {
+            animation: neon .08s ease-in-out infinite alternate;
+        }
+
+        @keyframes neon {
+            from {
+                text-shadow:
+                        0 0 6px rgba(202,228,225,0.92),
+                        0 0 30px rgba(30,232,142,0.34),
+                        0 0 12px rgba(30,232,142,0.52),
+                        0 0 21px rgba(30,232,142,0.92),
+                        0 0 34px rgba(30,232,142,0.78),
+                        0 0 54px rgba(30,232,142,0.92);
+            }
+            to {
+                text-shadow:
+                        0 0 6px rgba(202,228,225,0.98),
+                        0 0 30px rgba(202,228,225,0.42),
+                        0 0 12px rgba(30,232,142,0.58),
+                        0 0 22px rgba(30,232,142,0.84),
+                        0 0 38px rgba(30,232,142,0.88),
+                        0 0 60px rgba(30,232,142,1);
+            }
+        }
     </style>
 
 
@@ -50,7 +107,7 @@
 <?php include "templates/header.php";?>
 
 <div id="container">
-    <img class="logo-liste" src="images/logo_autres.png" height="200"/>
+    <p class="logo-liste" style="font-family: disco;font-size: 5em"><img src="images/logo_autres.png" height="200"/><br/>Born to BED alive</p>
     <div id="sabres">
         <img id="sabre-autres" src="images/sabre_autres_min.png"/>
 
@@ -61,9 +118,12 @@
         </map>
 
     </div>
-    <img class="logo-liste" src="images/logo_carabed.png" height="200"/>
+    <p class="logo-liste" style="font-family: 'PiecesOfEight';font-size: 3.0em"><img  src="images/logo_carabed.png" height="200"/><br/>Pirates des Carabed</p>
 
 </div>
+
+
+<p id="qui-voter-link"><a href="https://pour-qui-faut-il-voter-bde-2021.epizy.com/" >Détails des défis des listes</a></p>
 
 
 
