@@ -27,6 +27,7 @@ body {
 
 @media screen and (min-device-width: 600px) {
     #banner {
+        width: 100%;
         margin-top: 2%;
         padding: 10px 20px;
         margin-bottom: 0.5%;
@@ -34,12 +35,21 @@ body {
         display: flex;
         align-items: center;
     }
-    #banner ul {
+
+    #banner nav {
+        width: 100%;
+    }
+
+    #main-banner {
         margin: 0;
         padding: 0;
-        list-style-type: none;
-        text-align: center;
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+    }
+
+    #menu-items {
+        list-style-type: none;
     }
     #banner li {
         float: left;
@@ -49,7 +59,8 @@ body {
     }
 
     #language_selector {
-        margin-left: auto;
+        align-self: center;
+        margin-right: 30px;
     }
 
     #banner li a {
