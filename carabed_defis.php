@@ -32,12 +32,12 @@ while($row = $response->fetch()) {
     }
     $challengers_list.="</ul>";
     print('
+    <hr width="90%">
     <div class="challenge">
     <h3>'.$date.' - '.$title.' : '.$points.' pts</h3><div class="details">
-    <div class="source">'.$src.'</div><div class="challengers"><h4>Participants:</h4>'.$challengers_list.'</div>
-    <div class="description"><h4>Description:</h4><p>'.$description.'</p></div></div>
+    <div class="source">'.$src.'</div><div class="infos"><div class="challengers"><h4>Participants:</h4>'.$challengers_list.'</div>
+    <div class="description"><h4>Description:</h4><p>'.$description.'</p></div></div></div>
     </div>
-    <hr width="90%">
     ');
 }
 

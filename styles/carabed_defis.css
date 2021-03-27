@@ -1,30 +1,73 @@
-.details {
-    display: flex;
+
+@media screen and (min-device-width: 600px) {
+    .details {
+        display: flex;
+    }
+
+    h4 {
+        font-size: 2.0em;
+
+    }
+
+    .infos {
+        display: flex;
+    }
+
+    .challengers ul {
+        font-size: 1.5em;
+    }
+
+    .challenge {
+        margin: 50px 30px;
+    }
+
+    .details {
+        margin-top: 30px;
+    }
+
+    .source, .challengers, .description {
+        margin: 0 50px;
+    }
+
+    .description p {
+        margin-left: 30px;
+        font-size: 1.2em;
+        text-align: justify;
+    }
 }
 
-h4 {
-    font-size: 2.0em;
+@media screen and (max-device-width: 600px) {
 
+    .challenge {
+        text-align: center;
+    }
+
+    .infos {
+        display: flex;
+        justify-content: center;
+    }
+
+    h4 {
+        font-size: 1.6em;
+
+    }
+
+    .challengers ul {
+        font-size: 1.5em;
+    }
+
+    .details {
+        margin-top: 30px;
+    }
+
+    .source, .challengers, .description {
+        margin: 0 50px;
+    }
+
+    .description p {
+        margin-left: 30px;
+        font-size: 1.2em;
+        text-align: justify;
+    }
 }
 
-.challengers ul {
-    font-size: 1.5em;
-}
-
-.challenge {
-    margin: 50px 30px;
-}
-
-.details {
-    margin-top: 30px;
-}
-
-.source, .challengers, .description {
-    margin: 0 50px;
-}
-
-.description p {
-    margin-left: 30px;
-    font-size: 1.2em;
-    text-align: justify;
-}
