@@ -5,7 +5,6 @@
 }
 
 h1 {
-    margin-left: 5%;
     font-size: 2.5em;
     font-family: Caribbean;
     margin: 100px 0 50px 5%;
@@ -21,13 +20,6 @@ h1 {
 
 .face-front {
     position: relative;
-}
-
-.skull {
-    position: absolute;
-    bottom: 5px;
-    left: 43%;
-    width: 60px;
 }
 
 .member-name {
@@ -67,7 +59,7 @@ h1 {
     .flippingcard {
         align-self: flex-end;
         position: relative;
-        width: 300px;
+        width: 350px;
         margin-right: 4%;
         margin-left: 4%;
     }
@@ -102,10 +94,32 @@ h1 {
 
 
 div[class^="card"] {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     perspective-origin: center bottom;
     position: sticky;
+}
+
+@media screen and (max-device-width: 600px) {
+
+    h1 {
+        text-align: center;
+        font-size: 3.5em;
+    }
+
+    .member-name {
+        font-size: 3em;
+    }
+
+    .flippingcard {
+        width: 700px;
+    }
+
+
+    div[class^="card"] {
+        height: 700px;
+        width: 700px;
+    }
 }
 
 div[class^="card"] [class^="face"] {
@@ -126,12 +140,10 @@ div[class^="card"] .face-front {
 }
 
 div[class^="card"] p {
-    height: 280px;
-    width: 280px;
-    font-size: large;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
     overflow: auto;
-    margin: 20px;
-    margin-right: 20px;
 }
 
 div[class^="card"] .face-back {

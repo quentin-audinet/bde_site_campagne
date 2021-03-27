@@ -9,10 +9,10 @@ while($row = $data->fetch()) {
     $photo = $row['photo'];
 
     print('<div class="flippingcard">
-            <h2>'.$nom.'</h2>
+            <h2 class="member-name">'.$nom.'</h2>
             <div class="card-single">
                 <div class="face-front">
-                    <img width = "300" height = "300" src="images/members/'.$photo.'" alt="Will Turner" />
+                    <img width = "100%" height = "100%" src="images/members/'.$photo.'" alt="Will Turner" />
                 </div>
                 <div class="face-back">
                     <p>'.$descrition.'</p>
