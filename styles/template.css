@@ -226,6 +226,12 @@ section {
         background-color: #E4DCC7;
         width: 80%;
     }
+
+    .page-title {
+        font-family: PiecesOfEight;
+        font-size: 4.0em;
+        text-align: center;
+    }
 }
 
 @media screen and (max-device-width: 600px) {
@@ -233,13 +239,15 @@ section {
         background-color: #E4DCC7;
         width: 100%;
     }
+
+    .page-title {
+        font-family: PiecesOfEight;
+        font-size: 7.0em;
+        text-align: center;
+    }
 }
 
-.page-title {
-    font-family: PiecesOfEight;
-    font-size: 4.0em;
-    text-align: center;
-}
+
 
 
 /* FOOTER */

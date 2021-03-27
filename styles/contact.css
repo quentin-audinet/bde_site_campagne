@@ -1,135 +1,215 @@
-.map_container {
-    position: relative;
-    height: 513px;
-    width: 1000px;
-    margin: 40px auto;
+
+@media screen and (min-device-width: 600px){
+    .map_container {
+        position: relative;
+        height: 513px;
+        width: 1000px;
+        margin: 40px auto;
+    }
+
+    #map_panel {
+        cursor: zoom-in;
+        border-radius: 5%;
+    }
+
+    .map_container a {
+        position: absolute;
+    }
+
+    .map_container div {
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #E4DCC7;
+        float: left;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div .fas, .map_container div .fab {
+        color: #E4DCC7;
+        margin-top: 9px;
+        margin-left: 1px;
+        transition: all 0.5s ease;
+    }
+
+
+    /* FACEBOOK */
+    .map_container div.facebook {
+        position: absolute;
+        top: 126px;
+        left: 225px;
+    }
+
+    .map_container div:hover.facebook {
+        border: 5px solid #3b5998;
+        box-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-facebook-f {
+        color: #3b5998;
+        text-shadow: 0 0 15px #3b5998;
+        transition: all 0.5s ease;
+    }
+
+
+    /* INSTAGRAM */
+    .map_container div.instagram {
+        position: absolute;
+        top: 298px;
+        left: 345px;
+    }
+
+    .map_container div:hover.instagram {
+        border: 5px solid #bc2a8d;
+        box-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-instagram {
+        color: #bc2a8d;
+        text-shadow: 0 0 15px #bc2a8d;
+        transition: all 0.5s ease;
+    }
+
+    /* MAIL */
+    .map_container div.mail {
+        position: absolute;
+        top: 134px;
+        left: 550px;
+    }
+
+    .map_container div:hover.mail {
+        border: 5px solid #0ed2f5;
+        box-shadow: 0 0 15px #0ed2f5;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-envelope {
+        color: #0ed2f5;
+        text-shadow: 0 0 15px #0ed2f5;
+        transition: all 0.5s ease;
+    }
+
+
+    /* TIKTOK */
+    .map_container div.tiktok {
+        position: absolute;
+        top: 56px;
+        left: 733px;
+    }
+
+    .map_container div:hover.tiktok {
+        border: 5px solid #210303;
+        box-shadow: 0 0 15px #210303;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-tiktok {
+        color: #210303;
+        text-shadow: 0 0 15px #210303;
+        transition: all 0.5s ease;
+    }
+
+    /* LOCK */
+    .map_container div.lock {
+        position: absolute;
+        top: 257px;
+        left: 733px;
+    }
+
+    .map_container div:hover.lock {
+        border: 5px solid #ffb800;
+        box-shadow: 0 0 15px #ffb800;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-lock {
+        color: #ffb800;
+        text-shadow: 0 0 15px #ffb800;
+        transition: all 0.5s ease;
+    }
+
+    /* UNLOCK */
+
+    /* PS: Tu ne trouveras rien ici... Mais cherche ailleurs ! */
+    .map_container div.unlock {
+        position: absolute;
+        top: 257px;
+        left: 733px;
+    }
+
+    .map_container div:hover.unlock {
+        border: 5px solid #12ff1f;
+        box-shadow: 0 0 15px #12ff1f;
+        transition: all 0.5s ease;
+    }
+
+    .map_container div:hover .fa-unlock {
+        color: #12ff1f;
+        text-shadow: 0 0 15px #12ff1f;
+        transition: all 0.5s ease;
+    }
+
+    .contact-mobile {
+        display: none;
+    }
 }
 
-#map_panel {
-    cursor: zoom-in;
-    border-radius: 5%;
-}
+@media screen and (max-device-width: 600px) {
+    .map_container {
+        display: none;
+    }
 
-.map_container a {
-    position: absolute;
-}
+    .contact-mobile {
+        text-align: center;
+    }
 
-.map_container div {
-    display: flex;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 5px solid #E4DCC7;
-    float: left;
-    transition: all 0.5s ease;
-}
-
-.map_container div .fa {
-    color: #E4DCC7;
-    margin-top: 9px;
-    margin-left: 1px;
-    transition: all 0.5s ease;
-}
+    .social-btn {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        margin: 40px 0;
+    }
 
 
-/* FACEBOOK */
-.map_container div.facebook {
-    position: absolute;
-    top: 126px;
-    left: 225px;
-}
 
-.map_container div:hover.facebook {
-    border: 5px solid #3b5998;
-    box-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-}
+    .contact-mobile a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 5em;
+        color: white;
+        border-radius: 8px;
+    }
 
-.map_container div:hover .fa-facebook {
-    color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-}
+    .social-btn span {
+        width: 80%;
+        display: inline-block;
+    }
 
+    .btn-fb {
+        background-color: #3b5998;
+    }
 
-/* INSTAGRAM */
-.map_container div.instagram {
-    position: absolute;
-    top: 242px;
-    left: 480px;
-}
+    .btn-insta {
+        background-color: #BC2A8D;
+    }
 
-.map_container div:hover.instagram {
-    border: 5px solid #bc2a8d;
-    box-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-}
+    .btn-mail {
+        background-color: #0ED2F5;
+    }
 
-.map_container div:hover .fa-instagram {
-    color: #bc2a8d;
-    text-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-}
+    .btn-twitch {
+        background-color: #6441a5;
+    }
 
-/* MAIL */
-.map_container div.mail {
-    position: absolute;
-    top: 134px;
-    left: 550px;
-}
-
-.map_container div:hover.mail {
-    border: 5px solid #0ed2f5;
-    box-shadow: 0 0 15px #0ed2f5;
-    transition: all 0.5s ease;
-}
-
-.map_container div:hover .fa-envelope {
-    color: #0ed2f5;
-    text-shadow: 0 0 15px #0ed2f5;
-    transition: all 0.5s ease;
-}
-
-/* LOCK */
-.map_container div.lock {
-    position: absolute;
-    top: 257px;
-    left: 733px;
-}
-
-.map_container div:hover.lock {
-    border: 5px solid #ffb800;
-    box-shadow: 0 0 15px #ffb800;
-    transition: all 0.5s ease;
-}
-
-.map_container div:hover .fa-lock {
-    color: #ffb800;
-    text-shadow: 0 0 15px #ffb800;
-    transition: all 0.5s ease;
-}
-
-/* UNLOCK */
-
-/* PS: Tu ne trouveras rien ici... Mais cherche ailleurs ! */
-.map_container div.unlock {
-    position: absolute;
-    top: 257px;
-    left: 733px;
-}
-
-.map_container div:hover.unlock {
-    border: 5px solid #12ff1f;
-    box-shadow: 0 0 15px #12ff1f;
-    transition: all 0.5s ease;
-}
-
-.map_container div:hover .fa-unlock {
-    color: #12ff1f;
-    text-shadow: 0 0 15px #12ff1f;
-    transition: all 0.5s ease;
+    .btn-tiktok {
+        background-color: #210303;
+    }
 }
