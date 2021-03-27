@@ -132,10 +132,6 @@ body {
 
 @media screen and (max-device-width: 600px) {
 
-    #banner {
-        z-index: 2;
-    }
-
     #open,
     #close {
         height: 96px;
@@ -168,10 +164,8 @@ body {
     }
 
     #menu-items li {
-        margin-top: 150px;
-        margin-left: 40px;
+        margin: 80px 40px;
         font-size: 60px;
-        line-height: 40px;
         font-family: 'matura MT Script Capitals', arial;
         text-decoration: none;
     }
@@ -227,10 +221,18 @@ section {
     justify-content: center;
 }
 
-.show_zone {
-    z-index: 1;
-    background-color: #E4DCC7;
-    width: 80%;
+@media screen and (min-device-width: 600px) {
+    .show_zone {
+        background-color: #E4DCC7;
+        width: 80%;
+    }
+}
+
+@media screen and (max-device-width: 600px) {
+    .show_zone {
+        background-color: #E4DCC7;
+        width: 100%;
+    }
 }
 
 .page-title {
