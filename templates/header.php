@@ -22,6 +22,7 @@
             <a href="#" id="close">x</a>
             <div id="menu-items">
                 <li><a href="index.php" class="menu"><span class="t_acceuil" /></a></li>
+                <li><a href="news.php" class="menu"><span class="t_news" /></a></li>
                 <li><a href="Agenda.php" class="menu"><span class="t_agenda" /></a></li>
                 <li><a href="defis.php" class="menu"><span class="t_defis" /></a> </li>
                 <li><a href="Listeux.php" class="menu"><span class="t_membres" /></a> </li>

@@ -13,42 +13,56 @@
     src: url("../fonts/DISCO1__.TTF");
 }
 
-#container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 800px
+@media screen and (min-device-width: 600px){
+    #container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 800px
+    }
+
+    .logo-liste {
+        align-self: center;
+        margin: auto;
+    }
+
+    .logo-liste img {
+
+        width: 400px;
+        height: 400px;
+    }
+
+    #sabres {
+        padding-top: 50px;
+        position: relative;
+        height: 700px;
+        width: 700px;
+    }
+
+    #sabre-carabed {
+        right: 0;
+        bottom:0;
+        position: absolute;
+    }
+
+    #sabre-autres {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #mobile-container {
+        display: none;
+    }
 }
 
-.logo-liste {
-    align-self: center;
-    margin: auto;
+@media screen and (max-device-width: 600px){
+    #container {
+        display: none;
+    }
 }
 
-.logo-liste img {
 
-    width: 400px;
-    height: 400px;
-}
-
-#sabres {
-    padding-top: 50px;
-    position: relative;
-    height: 700px;
-    width: 700px;
-}
-
-#sabre-carabed {
-    right: 0;
-    bottom:0;
-    position: absolute;
-}
-
-#sabre-autres {
-    left: 0;
-    bottom: 0;
-    position: absolute;
-}
 
 #qui-voter-link {
     width: 100%;
