@@ -42,12 +42,32 @@
     bottom: -24%;
 }
 
+@media screen and (min-device-width: 600px) {
+    .neon__text {
+        line-height: 1;
+        color: #d7ffd2;
+        animation: neon .08s ease-in-out infinite alternate;
+    }
+}
 
-.neon__text {
-     line-height: 1;
-     color: #d7ffd2;
-     animation: neon .08s ease-in-out infinite alternate;
- }
+@media screen and (max-device-width: 600px) {
+
+    #acceuil {
+        margin-top: 20%;
+    }
+
+    .neon__text {
+        line-height: 1;
+        color: #d7ffd2;
+        text-shadow:
+                0 0 6px rgba(202,228,225,0.92),
+                0 0 30px rgba(30,232,142,0.34),
+                0 0 12px rgba(30,232,142,0.52),
+                0 0 21px rgba(30,232,142,0.92),
+                0 0 34px rgba(30,232,142,0.78),
+                0 0 54px rgba(30,232,142,0.92);
+    }
+}
 
 @keyframes neon {
     from {
