@@ -25,6 +25,7 @@
     <div class="instagram"><a href="https://www.instagram.com/carabed_"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></div>
     <div class="mail"><a href="mailto:piratedescarabed@gmail.com"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i></a></div>
     <div class="tiktok"><a href="https://vm.tiktok.com/ZMeUbDXCt"><i class="fab fa-tiktok fa-2x" aria-hidden="true"></i></a></div>
+    <div class="twitch"><a href="#"><i class="fab fa-twitch fa-2x" aria-hidden="true"></i></a></div>
     <div class="<?php if(isset($pass)) {echo 'un'; } ?>lock"><a href="#"><i class="fas fa-<?php if(isset($pass)) {echo 'un'; } ?>lock fa-2x" aria-hidden="true"></i></a></div>
 
     <!-- Il y a peut être des choses à découvrir sur ce site... -->
