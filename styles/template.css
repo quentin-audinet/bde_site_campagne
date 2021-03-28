@@ -16,7 +16,6 @@ html {
 
 body {
     height: 100%;
-    background: url("../images/background.jpg") no-repeat center fixed;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -26,6 +25,11 @@ body {
 /*  BANNER : COMPUTERS */
 
 @media screen and (min-device-width: 600px) {
+
+    body {
+        background: url("../images/background.jpg") no-repeat center fixed;
+    }
+
     #banner {
         width: 100%;
         margin-top: 2%;
@@ -34,6 +38,9 @@ body {
         background-color: #2E2422;
         display: flex;
         align-items: center;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
 
     #banner nav {
@@ -142,6 +149,11 @@ body {
 /*  BANNER : PHONES */
 
 @media screen and (max-device-width: 600px) {
+
+
+    body {
+        background: url("../images/background.jpg") center fixed;
+    }
 
     #open,
     #close {
