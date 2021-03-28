@@ -1,6 +1,7 @@
 <?php
 require "conf.php";
-session_destroy();
+if(!isset($_SESSION))
+    session_destroy();
 setcookie('user_id', '', time() - 3600,  '/', null, true, true);
 header("Location:login.php");
 ?>

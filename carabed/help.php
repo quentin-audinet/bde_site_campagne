@@ -1,4 +1,5 @@
 <?php
+include "../redirect.php";
 include "conf.php";
 $hint = $db->query("SELECT hint FROM users WHERE username='".$_SESSION['username']."'")->fetch()[0];
 ?>

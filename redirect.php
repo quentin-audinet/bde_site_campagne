@@ -1,5 +1,6 @@
 <?php
-session_start();
+if(!isset($_SESSION))
+    session_start();
 if(!isset($_SESSION['admin']) && (!isset($_GET['carabed']) || $_GET['carabed']!="enter")) {
     $today = time();
     $release = mktime(4,4,0,3,31,2021);

@@ -1,4 +1,5 @@
 <?php
+include "../redirect.php";
 //Vérifier que toutes les données on été renseignées
 if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['serment'])) {
 
