@@ -15,8 +15,7 @@ html {
 }
 
 body {
-    height: 100%;
-    background: url("../images/background.jpg");
+    background: url("../images/background.jpg") no-repeat center fixed;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -232,6 +231,13 @@ section {
     justify-content: center;
 }
 
+.page-title {
+    font-family: PiecesOfEight;
+    text-align: center;
+    color: #2E2422;
+}
+
+
 @media screen and (min-device-width: 600px) {
     .show_zone {
         background-color: #E4DCC7;
@@ -239,9 +245,7 @@ section {
     }
 
     .page-title {
-        font-family: PiecesOfEight;
         font-size: 4.0em;
-        text-align: center;
     }
 }
 
@@ -252,9 +256,7 @@ section {
     }
 
     .page-title {
-        font-family: PiecesOfEight;
         font-size: 7.0em;
-        text-align: center;
     }
 }
 
