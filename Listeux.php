@@ -6,6 +6,9 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles/listeux.css" />
         <link rel="stylesheet" href="styles/template.css" />
+        <link rel="stylesheet" href="styles/fontawesome/css/fontawesome.css" />
+        <link rel="stylesheet" href="styles/fontawesome/css/solid.css" />
+        <link rel="stylesheet" href="styles/fontawesome/css/brands.css" />
         <title>Les Listeux</title>
     </head>
 
