@@ -7,6 +7,7 @@ while($row = $data->fetch()) {
     $surnom = $row["surnom"];
     $descrition = $row["description"];
     $photo = $row['photo'];
+    $socials = $row['socials'];
 
     print('<div class="flippingcard">
             <h2 class="member-name">'.$nom.'</h2>
@@ -15,7 +16,8 @@ while($row = $data->fetch()) {
                     <img width = "100%" height = "100%" src="images/members/'.$photo.'" alt="Will Turner" />
                 </div>
                 <div class="face-back">
-                    <p>'.$descrition.'</p>
+                    <p>'.$descrition.'<br/></p>
+                    <p class="socials">'.$socials.'</p>
                 </div>
             </div>
         </div>');

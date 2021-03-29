@@ -119,6 +119,7 @@ div[class^="card"] {
     div[class^="card"] {
         height: 700px;
         width: 700px;
+        font-size: 2.0em;
     }
 }
 
@@ -140,16 +141,53 @@ div[class^="card"] .face-front {
 }
 
 div[class^="card"] p {
-    height: 100%;
     width: 100%;
     font-size: 1.5em;
     overflow: auto;
 }
 
+div[class^="card"] .socials {
+    justify-self: flex-end;
+    width: 100%;
+    font-size: 3em;
+    overflow: visible;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    justify-content: space-around;
+}
+
+.socials a {
+    color: black;
+}
+
+.socials i {
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+.fa-tiktok:hover {
+    color: white;
+}
+
+
 div[class^="card"] .face-back {
     background-color: burlywood;
     z-index: 0;
     transform: rotateY(-180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 div[class^="card"].rotated .face-front {

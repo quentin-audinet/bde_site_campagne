@@ -1,5 +1,5 @@
 <?php
-include "redirect.php";
+include "../redirect.php";
 require "conf.php";
 if(!isset($_SESSION['username'])) {
     header('Location:login.php');
