@@ -19,9 +19,10 @@
         <h1 class="page-title"><span class="t_membres_titre"></span> </h1>
 
         <h1>Le bureau</h1>
+        <?php include "scripts/show_members.php"; ?>
             <div id="bureau_cards">
                 <?php
-                include "scripts/show_bureau.php";
+                showMember(1);
                 ?>
 
             </div>
@@ -29,14 +30,14 @@
         <h1>Les listeux</h1>
         <div id="members_cards">
             <?php
-            include "scripts/show_listeux.php";
+            showMember(2);
             ?>
         </div>
 
         <h1>Les soutiens</h1>
             <div id="members_cards">
                 <?php
-                include "scripts/show_members.php";
+                showMember(0);
                 ?>
             </div>
 
