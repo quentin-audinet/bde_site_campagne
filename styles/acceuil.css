@@ -29,18 +29,18 @@
     position: absolute;
     max-width: 850px;
     width: 70%;
-    bottom: -60%;
+    bottom: -65%;
     visibility: hidden;
 }
 
 #acceuil p {
     position: absolute;
     font-family: 'caribbean', Arial;
-    font-size: 4.0vw;
+    font-size: min(4.8vw,4.6em);
     text-align: center;
-    line-height: 6.0vw;
+    line-height: min(6.0vw,100px);
     z-index: 1;
-    bottom: -60%;
+    bottom: -62%;
 }
 
 @media screen and (min-device-width: 600px) {
