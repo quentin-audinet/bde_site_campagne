@@ -25,7 +25,7 @@
         <img id="parchemin" src="" alt="parchemin" />
         <p class="neon__text">Pirates des<br />Carabed</p>
     </div>
-    <div style="height: 150px"></div>
+    <div style="height: 240px"></div>
     <h2>Bienvenue sur le site des Pirates des Carabed</h2>
     <p></p>
 

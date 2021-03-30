@@ -29,7 +29,7 @@
     position: absolute;
     max-width: 850px;
     width: 70%;
-    bottom: -30%;
+    bottom: -60%;
     visibility: hidden;
 }
 
@@ -40,7 +40,7 @@
     text-align: center;
     line-height: 6.0vw;
     z-index: 1;
-    bottom: -30%;
+    bottom: -60%;
 }
 
 @media screen and (min-device-width: 600px) {
@@ -59,7 +59,7 @@
 
     #acceuil p {
         font-size: 5.5vw;
-        bottom: -24%;
+        bottom: -52%;
     }
 
     .neon__text {
