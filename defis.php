@@ -14,7 +14,7 @@
 <?php include "templates/header.php";?>
 
 <div id="container">
-    <p class="logo-liste" style="font-family: disco;font-size: 5em"><img src="images/logo_autres.png" height="200"/><br/>Born to BED alive</p>
+    <p class="logo-liste" style="font-family: 'PiecesOfEight';font-size: 2.5vw"><img  src="images/logo_carabed.png"/><br/>Pirates des Carabed</p>
     <div id="sabres">
         <img id="sabre-autres" src="images/sabre_autres_min.png"/>
 
@@ -25,7 +25,7 @@
         </map>
 
     </div>
-    <p class="logo-liste" style="font-family: 'PiecesOfEight';font-size: 3.0em"><img  src="images/logo_carabed.png" height="200"/><br/>Pirates des Carabed</p>
+    <p class="logo-liste" style="font-family: disco;font-size: 4vw"><img src="images/logo_autres.png"/><br/>Born to BED alive</p>
     <script type="text/javascript" src="scripts/sabres_anim.js"></script>
 
 </div>

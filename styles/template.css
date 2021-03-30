@@ -63,12 +63,16 @@ body {
         margin: auto;
         margin: 0px 10px;
         padding: 0;
+
     }
 
     #language_selector {
         align-self: center;
         margin-right: 30px;
     }
+     #language_selector button {
+         width: 100px;
+     }
 
     #banner li a {
         display: block;

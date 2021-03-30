@@ -24,24 +24,25 @@
     .logo-liste {
         align-self: center;
         margin: auto;
+        width: 30%;
+        height: 30%;
     }
 
     .logo-liste img {
-
-        width: 400px;
-        height: 400px;
+        width: 16vw;
+        height: 16vw;
     }
 
     #sabres {
         padding-top: 50px;
         position: relative;
         height: 700px;
-        width: 700px;
+        width: 675px;
     }
 
     #sabre-carabed {
         right: 0;
-        bottom:0;
+        bottom: 0;
         position: absolute;
     }
 
