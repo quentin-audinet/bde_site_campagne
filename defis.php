@@ -12,7 +12,11 @@
 
 <body>
 <?php include "templates/header.php";?>
-
+<script>
+    if(window.matchMedia("(max-device-width: 600px").matches) {
+        location.href = "carabed_defis.php";
+    }
+</script>
 <div id="container">
     <p class="logo-liste" style="font-family: 'PiecesOfEight';font-size: 2.5vw"><img  src="images/logo_carabed.png"/><br/>Pirates des Carabed</p>
     <div id="sabres">
@@ -29,18 +33,11 @@
     <p class="logo-liste" style="font-family: disco;font-size: 4vw"><img src="images/logo_autres.png"/><br/>Born to BED alive</p>
     <script type="text/javascript" src="scripts/sabres_anim.js"></script>
 </div>
-
 <div id="middle-size">
     <p class="logo-liste-15p" style="font-family: 'PiecesOfEight';font-size: 2.5vw"><img  src="images/logo_carabed.png"/><br/>Pirates des Carabed</p>
     <p class="logo-liste-15p" style="font-family: disco;font-size: 4vw"><img src="images/logo_autres.png"/><br/>Born to BED alive</p>
 </div>
-
-
-<script>
-    if(window.matchMedia("(max-device-width: 600px").matches) {
-        location.href = "carabed_defis.php";
-    }
-</script>
+<p class="logo-liste" style="text-align: center;font-family: cursive;font-size: 3vw"><img src="images/bedzirs.jpg" /><br/>Bedzir de France</p>
 
 
 <p id="qui-voter-link"><a href="https://pour-qui-faut-il-voter-bde-2021.epizy.com/" >Détails des défis des listes</a></p>
