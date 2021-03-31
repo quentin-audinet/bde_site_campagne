@@ -13,6 +13,11 @@
     src: url("../fonts/DISCO1__.TTF");
 }
 
+@font-face {
+    font-family: MindRescue;
+    src: url("../fonts/MindRescue.ttf");
+}
+
 @media screen and (min-device-width: 600px){
     #container {
         text-align: center;
@@ -91,8 +96,24 @@
 }
 
 @media screen and (max-device-width: 600px){
+
     #container {
         display: none;
+    }
+
+    #middle-size {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .logo-liste-15p {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logos {
+        width: 250px;
     }
 }
 

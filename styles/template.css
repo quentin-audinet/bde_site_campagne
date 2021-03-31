@@ -151,7 +151,8 @@ body {
 
 @media screen and (max-device-width: 1700px) {
     #banner li a{
-        margin-right: 5px;
+        margin-right: 10px;
+        font-size: 1.2em;
     }
 }
 
