@@ -1,5 +1,5 @@
 
-@media screen and (min-device-width: 600px) {
+@media screen and (min-device-width: 1800px) {
     .details {
         display: flex;
     }
@@ -36,7 +36,7 @@
     }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-device-width: 1800px) {
 
     .challenge {
         text-align: center;

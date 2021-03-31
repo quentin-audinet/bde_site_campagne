@@ -27,7 +27,8 @@
     </div>
     <div style="height: 240px"></div>
     <h2>Bienvenue sur le site des Pirates des Carabed</h2>
-    <p></p>
+    <p style="text-align: center">Vous trouverez ici toutes les informatons relatives à notre liste.<br/>Regardez à nouveau la vidéo de présentation de notre liste (Alban t'es  trop beau)</p>
+    <iframe width="1244" height="700" src="https://www.youtube.com/embed/Gg_JAz5tzW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <script>
 

@@ -25,10 +25,16 @@
         </map>
 
     </div>
+
     <p class="logo-liste" style="font-family: disco;font-size: 4vw"><img src="images/logo_autres.png"/><br/>Born to BED alive</p>
     <script type="text/javascript" src="scripts/sabres_anim.js"></script>
-
 </div>
+
+<div id="middle-size">
+    <p class="logo-liste-15p" style="font-family: 'PiecesOfEight';font-size: 2.5vw"><img  src="images/logo_carabed.png"/><br/>Pirates des Carabed</p>
+    <p class="logo-liste-15p" style="font-family: disco;font-size: 4vw"><img src="images/logo_autres.png"/><br/>Born to BED alive</p>
+</div>
+
 
 <script>
     if(window.matchMedia("(max-device-width: 600px").matches) {
