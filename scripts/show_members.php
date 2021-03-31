@@ -16,7 +16,7 @@ function showMember($statut)
             <h2 class="member-name">' . $nom . '</h2>
             <div class="card-single">
                 <div class="face-front">
-                    <img width = "100%" height = "100%" src="images/members/' . $photo . '" alt="Will Turner" />
+                    <img width = "100%" height = "100%" src="images/members/' . $photo . '" alt="Un membre incroyable" />
                 </div>
                 <div class="face-back">
                     <h3>'.$surnom.'</h3>
