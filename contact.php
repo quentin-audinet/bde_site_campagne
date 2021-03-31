@@ -41,6 +41,10 @@
             }
             ?>
         })
+
+        document.getElementsByClassName("twitch")[0].addEventListener('click', () => {
+            alert("Page à venir...");
+        })
     </script>
 
 </div>
