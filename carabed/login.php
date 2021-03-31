@@ -1,5 +1,4 @@
 <?php
-include "../redirect.php";
 if(isset($_POST['username']) && isset($_POST['password'])) {
     require "../db/db_connect.php";
     $username = $_POST['username'];

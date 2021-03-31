@@ -1,5 +1,4 @@
 <?php
-include "../redirect.php";
 if(isset($_GET['username'])) {
     $username = $_GET['username'];
     include "../db/db_connect.php";

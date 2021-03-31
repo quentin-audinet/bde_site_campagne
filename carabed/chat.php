@@ -1,5 +1,4 @@
 <?php
-include "../redirect.php";
 if(empty($_SESSION)) {
     require "conf.php";
 }
