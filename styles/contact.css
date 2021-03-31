@@ -180,6 +180,16 @@
     }
 }
 
+
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1500px){
+    .show_zone {
+        width: 100%;
+    }
+}
+
+
+
 @media screen and (max-device-width: 600px) {
     .map_container {
         display: none;

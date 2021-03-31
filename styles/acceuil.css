@@ -51,6 +51,13 @@
     }
 }
 
+@media screen and (max-device-width: 1400px){
+    iframe {
+        width: 90%;
+    }
+
+}
+
 @media screen and (max-device-width: 600px) {
 
     #acceuil {
