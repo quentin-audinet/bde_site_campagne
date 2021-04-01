@@ -5,7 +5,7 @@ const open = () => {
     chest.setAttribute("src","images/chest_opening-min.gif");
     chest.style.cursor = "auto";
     chest.removeEventListener("click",open);
-    setTimeout(move_logos, 820);
+    setTimeout(waiting, 820);
 
 };
 
@@ -16,8 +16,13 @@ class Point {
     }
 }
 
+const waiting = () => {
+    alert("Les sponsors seront révélés lors de la semaine de campagne !")
+}
+
 const move_logos = () => {
 
+    alert("Espèce de pirate va, c'est cadeau");
     let id=null;
     let logos_obj = document.getElementsByClassName("logo");
     let logos = [];
