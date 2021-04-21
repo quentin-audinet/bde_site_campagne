@@ -1,12 +1,20 @@
-html {
+@font-face {
+    font-family: 'GreatVibes';
+    src: url("fonts/GreatVibes-Regular.ttf");
+}
+
+@font-face {
     font-family: 'helvetica';
     src: url('fonts/HelveticaLTStd-BlkCond.otf');
+}
+
+html {
+    font-family: 'helvetica';
     background: url("Images/Babar.png");
     background-size: cover;
 }
 head title {
-    font-family: 'Garlando';
-    src: url('fonts/Garlando.ttf');
+    font-family: 'GreatVibes';
     text-align: center;
 }
 
@@ -20,8 +28,16 @@ body {
 }
 
 #main-title {
+    display: flex;
     grid-area: title;
     text-align: center;
+    font-size: xxx-large;
+    vertical-align: center;
+    flex-direction: row;
+}
+
+#main-title h1 {
+    margin: 5px;
 }
 
 #beers {
@@ -36,7 +52,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     grid-template-areas: "title title title";
-    background: mistyrose;
+    background: #ffe4e1dd;
     padding: 10px;
     border-radius: 5px;
     border: solid pink 10px;
@@ -46,9 +62,11 @@ body {
     grid-area: title;
 }
 
+
+
 .box-title h1 {
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
     text-align: center;
+    font-family: 'GreatVibes';
 }
 
 .in-display-box {
@@ -64,6 +82,12 @@ body {
     border: black solid 4px;
     margin: 0;
     width: 200px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.descr {
+    font-size: x-large;
 }
 
 .price-date {

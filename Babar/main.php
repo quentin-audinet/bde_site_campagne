@@ -7,7 +7,7 @@
 	</head>
 
     <body>
-        <h1 id="main-title" ><img src="../images/babar/babar.png" width="80px">Le site du bar<img src="../images/babar/babar.png" width="80px"></h1>
+    <div id="main-title" ><img src="../images/babar/babar.png" width="80px"><h1>Le site du bar</h1><img src="../images/babar/babar.png" width="80px"></div>
         <ul id="beers" class="display-box">
             <span id="beers-title-box" class="box-title">
                 <h1>Nos bières</h1>
