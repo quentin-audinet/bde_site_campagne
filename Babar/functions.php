@@ -15,13 +15,33 @@ function show_beers()
         $nom = $row["name"];
         $img = $row["img"];
         $descrition = $row["description"];
-        $prix = $row["prix"];
+        $prix = $row["price"];
 
         print("<span class='in-display-box'>
                 <span class='title'>$nom</span>
                 <img class='image' src='$img' width = '200' height='200'>
                 <p class='descr'>$descrition</p>
-                <p class='price-date'>$prix</p>
+                <p class='price-date'>$prix €</p>
             </span>");
     }
 }
+
+
+function show_events(){
+    include '../db/db_connect.php';
+    $data = $db->query("SELECT * FROM babar_events");
+
+    while ($row = $data->fetch()) {
+        $nom = $row["name"];
+        $img = $row["img"];
+        $descrition = $row["description"];
+        $date = $row["date"];
+
+        print("<span class='in-display-box'>
+                <span class='title'>$nom</span>
+                <img class='image' src='$img' width = '200' height='200'>
+                <p class='descr'>$descrition</p>
+                <p class='price-date'>$date</p>
+            </span>");
+    }
+};
