@@ -1,3 +1,4 @@
+<?php include "redirect.php"; ?>
 <!DOCTYPE html>
 <!-- Ah enfin un curieux ! Une vieille légende raconte qu'un trésor se trouve sur ce site. Malheureusement j'ai perdu ce vieux fichier.....
      Si je me souviens bien il s'intitulait "legende.txt". A tous les coups je l'avais caché dans un dossier "secret" pour éviter que quelqu'un ne tombe dessus.
@@ -8,7 +9,6 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title class="t_acceuil">Acceuil</title>
     <link rel="stylesheet" href="styles/template.css" />
     <link rel="stylesheet" href="styles/acceuil.css" />
@@ -25,6 +25,11 @@
         <img id="parchemin" src="" alt="parchemin" />
         <p class="neon__text">Pirates des<br />Carabed</p>
     </div>
+    <div style="height: 240px"></div>
+    <h2>Bienvenue sur le site des Pirates des Carabed</h2>
+    <p style="text-align: center">Vous trouverez ici toutes les informatons relatives à notre liste. N'hésitez pas à parcourir ce site dans ses moindres recoins il est fait pour ça ;)</p>
+    <p>Regardez à nouveau la vidéo de présentation de notre liste (Alban t'es  trop beau)</p>
+    <iframe width="1244" height="700" src="https://www.youtube.com/embed/Gg_JAz5tzW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <script>
 

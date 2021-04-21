@@ -1,6 +1,7 @@
 <?php
 require "../db/db_connect.php";
-session_start();
+if(!isset($_SESSION))
+    session_start();
 if(isset($_COOKIE['user_id']) && !isset($_SESSION['id'])) {
     $auth = $_COOKIE['user_id'];
     $auth = explode('$', $auth);

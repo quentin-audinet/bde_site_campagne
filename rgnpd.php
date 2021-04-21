@@ -1,3 +1,4 @@
+<?php include "redirect.php"; ?>
 <!DOCTYPE html>
 
 <html>
@@ -120,7 +121,7 @@
         Kaj fine, kaj ege la plej grava, vi kompromitas al la plej granda profito de la kampanjo!
     </p>
 
-    <h5>* Un grand merci à toute l'équipe google traduction qui m'a parmis de traduire les condtitions dans tant de langues !</h5>
+    <h5>* Un grand merci à toute l'équipe google traduction qui m'a permis de traduire les condtitions dans tant de langues !</h5>
 
     <?php include "templates/footer.html"; ?>
     </body>

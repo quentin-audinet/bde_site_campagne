@@ -12,7 +12,9 @@ if(!isset($_SESSION['maintainer'])) {
     <title>Gestion des membres</title>
     <link rel="stylesheet" href="../../styles/template.css" />
     <link rel="stylesheet" href="../../styles/manage_members.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../styles/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="../../styles/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="../../styles/fontawesome/css/solid.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         const previewFile = (input,img_id,file_id) => {
@@ -48,8 +50,13 @@ if(!isset($_SESSION['maintainer'])) {
                 <option value="1">Bureau</option>
                 <option value="2">Listeux</option>
                 <option value="0" selected>Membre</option>
-            </select>
+            </select><div>
+            <input type="text" name="fb_link" placeholder="lien vers la page fb" />
+            <input type="text" name="insta_link" placeholder="lien vers la page insta" />
+            <input type="text" name="twitter_link" placeholder="lien vers la page twitter" />
+            <input type="text" name="tiktok_link" placeholder="lien vers la page tiktok" />
             <button class="add-btn"><i class="fa fa-user-plus fa-2x"></i></button>
+            </div>
         </form>
 
         <h1>Gestion des membres de la liste</h1>
@@ -57,10 +64,29 @@ if(!isset($_SESSION['maintainer'])) {
 
         <?php
         include "../../db/db_connect.php";
-        $data = $db->query("SELECT * FROM members");
+        $data = $db->query("SELECT * FROM members ORDER BY id DESC");
         while($row = $data->fetch()) {
             $id = $row['id'];
+            $socials=$row['socials'];
+
+            $matches = array();
+            $links = array();
+            $classes = array();
+            $socials_array = array("facebook" => "", "instagram" => "", "twitter" => "", "tiktok" => "");
+
+            if(preg_match_all("@(href=')([^']+)+@i",$socials,$matches)) {
+                $links = $matches[2];
+            }
+            if(preg_match_all("@(class='fa[bs]? fa-)([^']+)+@i",$socials,$matches)) {
+                $classes = $matches[2];
+            }
+
+            for($i=0;$i<count($classes);$i++) {
+                $socials_array[$classes[$i]] = $links[$i];
+            }
+
             print('
+            <hr width="90%"/>   
             <div class="member">
                 <form enctype="multipart/form-data" action="update_member.php" method="post">
                     <input name="id" type="hidden" value="' . $id . '" />
@@ -75,7 +101,13 @@ if(!isset($_SESSION['maintainer'])) {
                         <option value="2" ' . ($row['statut']==2?"selected":"") . '>Listeux</option>
                         <option value="0" ' . ($row['statut']==0?"selected":"") . '>Membre</option>
                     </select>
+                    <div>
+                    <label><i class="fab fa-facebook"></i> </label><input type="text" name="fb_link" value="'. $socials_array['facebook'] .'" />
+                    <label><i class="fab fa-instagram"></i> </label><input type="text" name="insta_link" value="'. $socials_array['instagram'] .'" />
+                    <label><i class="fab fa-twitter"></i> </label><input type="text" name="twitter_link" value="'. $socials_array['twitter'] .'" />
+                    <label><i class="fab fa-tiktok"></i> </label><input type="text" name="tiktok_link" value="'. $socials_array['tiktok'] .'" />
                     <button class="edit-btn"><i class="fa fa-edit fa-2x"></i></button>
+                    </div>
                 </form>
                 <form action="remove_member.php" method="post">
                     <input type="hidden" name="id" value="' . $id .'" />

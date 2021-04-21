@@ -1,3 +1,4 @@
+<?php include "redirect.php"; ?>
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -20,9 +21,9 @@
             <img id="chest_img" src="images/chest.png" alt="chest" />
             <script type="text/javascript" src="scripts/partners_anim_chest.js"></script>
         </div>
-        <a href="#"><img id="logo_0" class="logo" src="images/evs_logo.png" alt="telecom" /></a>
-        <a href="#"><img id="logo_1" class="logo" src="images/cityscoot_logo.png" alt="jack d" /></a>
-        <a href="#"><img id="logo_2" class="logo" src="images/ocs_logo.png" alt="bnp" /></a>
+        <a href="https://evs.com" target="_blank"><img id="logo_0" class="logo" src="images/evs_logo.png" alt="EVS" /></a>
+        <a href="https://www.cityscoot.eu" target="_blank"><img id="logo_1" class="logo" src="images/cityscoot_logo.png" alt="CityScoot" /></a>
+        <a href="https://www.ocs.fr" target="_blank"><img id="logo_2" class="logo" src="images/ocs_logo.png" alt="OCS" /></a>
 
     </div>
 

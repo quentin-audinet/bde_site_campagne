@@ -1,5 +1,6 @@
-<?php require "conf.php";
-
+<?php
+include "../redirect.php";
+require "conf.php";
 if(!isset($_SESSION['username'])) {
     header('Location:login.php');
 }
@@ -65,12 +66,7 @@ if(isset($_POST['message'])) {
             <h1>Bien le bonjour <?php print($_SESSION['username']); ?> !</h1>
             <p>Voici la face cachée des Pirates des Carabed. Ici tu trouveras des défis à réaliser afin de marquer des points et tenter de remporter le trésor des Carabed.</p>
             <p>Pas besoin d'être un hackeur ou d'avoir des milliers de points sur Root-me pour faire les défis (même si ça aide).</p>
-            <p>Il y a deux catégories de défis :
-            <ul>
-                <li><b>L'histoire des carabed :</b> Une succession de quêtes qui te feront découvrir l'hisoire des Carabed</li>
-                <li><b>Défis libres :</b> Des défis sans ordre particulier en tout genre. Fais-en le plus possible pour gagner des points !</li>
-            </ul>
-            </p>
+            <p>Tu découvriras à partir d'une succession de quêtes l'histoire des carabed. Rendez-vous lundi 5 avril pour les premières quêtes ! (Avant si je me chauffe)</p>
         </section>
 
 

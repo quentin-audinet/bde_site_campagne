@@ -22,38 +22,65 @@
 #bureau {
     max-width: 1200px;
     width: 100%;
+    border-radius: 10px;
 }
 
 #parchemin {
     position: absolute;
     max-width: 850px;
     width: 70%;
-    bottom: -30%;
+    bottom: -65%;
     visibility: hidden;
 }
 
 #acceuil p {
     position: absolute;
     font-family: 'caribbean', Arial;
-    font-size: 4.4vw;
+    font-size: min(4.8vw,4.6em);
     text-align: center;
-    line-height: 6.0vw;
+    line-height: min(6.0vw,100px);
     z-index: 1;
-    bottom: -24%;
-}
-@media screen and (min-width: 1550px) {
-    #acceuil p {
-        font-size: 4.25em;
-        line-height: 93px   ;
-    }
-    
+    bottom: -62%;
 }
 
-.neon__text {
-     line-height: 1;
-     color: #d7ffd2;
-     animation: neon .08s ease-in-out infinite alternate;
- }
+@media screen and (min-device-width: 600px) {
+    .neon__text {
+        line-height: 1;
+        color: #d7ffd2;
+        animation: neon .08s ease-in-out infinite alternate;
+    }
+}
+
+@media screen and (max-device-width: 1400px){
+    iframe {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-device-width: 600px) {
+
+    #acceuil {
+        margin-top: 10%;
+    }
+
+    #acceuil p {
+        font-size: 5.5vw;
+        bottom: -52%;
+    }
+
+    .neon__text {
+        line-height: 1;
+        color: #d7ffd2;
+        text-shadow:
+                0 0 6px rgba(202,228,225,0.92),
+                0 0 30px rgba(30,232,142,0.34),
+                0 0 12px rgba(30,232,142,0.52),
+                0 0 21px rgba(30,232,142,0.92),
+                0 0 34px rgba(30,232,142,0.78),
+                0 0 54px rgba(30,232,142,0.92);
+    }
+}
 
 @keyframes neon {
     from {

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Un peu de patience</title>
+
+    <style>
+
+        @font-face {
+            font-family: PiecesOfEight;
+            src: url("fonts/Pieces_of_Eight.ttf");
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #0f2029;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .countdown_text {
+            font-family: PiecesOfEight;
+            font-size: 5vw;
+            line-height: 1;
+            color: #d7ffd2;
+            animation: neon .08s ease-in-out infinite alternate;
+        }
+
+
+        @keyframes neon {
+            from {
+                text-shadow:
+                        0 0 6px rgba(202,228,225,0.92),
+                        0 0 30px rgba(30,232,142,0.34),
+                        0 0 12px rgba(30,232,142,0.52),
+                        0 0 21px rgba(30,232,142,0.92),
+                        0 0 34px rgba(30,232,142,0.78),
+                        0 0 54px rgba(30,232,142,0.92);
+            }
+            to {
+                text-shadow:
+                        0 0 6px rgba(202,228,225,0.98),
+                        0 0 30px rgba(202,228,225,0.42),
+                        0 0 12px rgba(30,232,142,0.58),
+                        0 0 22px rgba(30,232,142,0.84),
+                        0 0 38px rgba(30,232,142,0.88),
+                        0 0 60px rgba(30,232,142,1);
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="countdown_text">Révélation du site</div>
+<div id="countdown" class="countdown_text"><noscript>Activez le javascript pour voir le compteur</noscript></div>
+<script type="text/javascript">
+
+    const countdown = () => {
+        const countdown = document.getElementById("countdown");
+        const curr_date = new Date();
+        const release_date = new Date("Mar 31 04:04:00 2021");
+        let total_secondes = (release_date - curr_date) / 1000;
+
+        if (total_secondes <= 0) {
+            location.href = "index.php";
+        } else {
+            const jours = Math.floor(total_secondes / (60 * 60 * 24));
+            const heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
+            const minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24) + (heures * 60 * 60))) / 60);
+            const secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24) + (heures * 60 * 60) + (minutes * 60)));
+
+            countdown.innerHTML = (jours>0?(jours + (jours>1?' jours ':' jour ')):'')
+                + (heures>0?(heures + (heures>1?' heures ':' heure ')):'')
+                + (minutes>0?(minutes + (minutes>1?' minutes ':' minute ')):'')
+                + (secondes>0?(secondes + (secondes>1?' secondes ':' seconde ')):'');
+        }
+        let actualisation = setTimeout("countdown();", 1000);
+    }
+
+    countdown();
+</script>
+
+</body>
+</html>
