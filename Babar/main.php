@@ -12,6 +12,12 @@
             <span id="beers-title-box" class="box-title">
                 <h1>Nos bières</h1>
             </span>
+
+            <?php
+            include "functions.php";
+            show_beers();
+            ?>
+
             <span class="in-display-box">
                 <span class="title">La Schouf</span>
                 <img class="image" src="Images/external-content.duckduckgo.com.jpeg" width = "200" height="200">

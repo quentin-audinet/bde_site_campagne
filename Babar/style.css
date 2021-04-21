@@ -1,7 +1,13 @@
 html {
     font-family: 'helvetica';
     src: url('fonts/HelveticaLTStd-BlkCond.otf');
-    background-image: url("Images/Babar.png")
+    background: url("Images/Babar.png");
+    background-size: cover;
+}
+head title {
+    font-family: 'Garlando';
+    src: url('fonts/Garlando.ttf');
+    text-align: center;
 }
 
 body {
@@ -28,13 +34,12 @@ body {
 
 .display-box {
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-areas: "title title title title";
+    grid-template-columns: repeat(3, 250px);
+    grid-template-areas: "title title title";
     background: mistyrose;
     padding: 10px;
     border-radius: 5px;
     border: solid pink 10px;
-    width: 1000px;
 }
 
 .box-title {
@@ -42,8 +47,7 @@ body {
 }
 
 .box-title h1 {
-    font-family: 'Garlando';
-    src: url('fonts/Garlando.ttf');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
     text-align: center;
 }
 
