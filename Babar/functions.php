@@ -47,11 +47,18 @@ function show_events(){
 }
 
 function post_chat($name, $message) {
-
+    include "../db/db_connect.php";
+    $req = "INSERT INTO babar_chat (`name`, `message`) VALUES (" . $db->quote($name) . ", " . $db->quote($message) . ")";
+    $db->query($req);
 }
 
 function get_chat() {
-
+    include "../db/db_connect.php";
+    $req = "SELECT * FROM babar_chat ORDER BY 'date' DESC";
+    $data = $db->query($req);
+    while($row = $data->fetch()) {
+        print("<div class='chat'><span class='name'>".$row['name']."</span><span class='message'>". $row['message'] ."</span></div>    
+        ");
+    }
 }
-
 ?>
