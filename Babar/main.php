@@ -17,9 +17,6 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Le blog de babar</title>
-        <div>
-            <?php get_chat(); ?>
-        </div>
 	</head>
 
     <body>
@@ -54,7 +51,7 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
                         <label for="nom">Nom :</label><br/>
                         <input type="text" id="nom" name="comment_name"/><br/>
                         <label for="message">Message :</label>
-                        <textarea name="comment_name" id="message" cols="150" rows="10"></textarea><br/>
+                        <textarea name="comment_message" id="message" cols="150" rows="10"></textarea><br/>
                         <input type="submit" value="Envoyer" width="90%" />
                     </form>
                 </div>
@@ -68,6 +65,8 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
                 <label for="chat_message">Message</label>
                 <input id="chat_message" name="chat_message" />
                 <input type="submit" value="envoyer">
+
+                <?php get_chat(); ?>
             </form>
         </div>
     </body>

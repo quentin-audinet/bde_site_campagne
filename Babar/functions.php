@@ -57,7 +57,7 @@ function get_chat() {
     $req = "SELECT * FROM babar_chat ORDER BY 'date' DESC";
     $data = $db->query($req);
     while($row = $data->fetch()) {
-        print("<div class='chat'><span class='name'>".$row['name']."</span><span class='message'>". $row['message'] ."</span></div>    
+        print("<div class='chat'><span class='name'>".$row['name']."</span> : <span class='message'>". $row['message'] ."</span></div>    
         ");
     }
 }
