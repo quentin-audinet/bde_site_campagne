@@ -1,0 +1,80 @@
+html {
+    font-family: 'helvetica';
+    src: url('fonts/HelveticaLTStd-BlkCond.otf');
+    background-image: url("Images/Babar.png")
+}
+
+body {
+    justify-content: center;
+    display: grid;
+    grid-template-areas:    "title title"
+                            "beers events"
+                            "bottom bottom";
+    grid-gap: 20px;
+}
+
+#main-title {
+    grid-area: title;
+    text-align: center;
+}
+
+#beers {
+    grid-area: beers;
+}
+
+#events {
+    grid-area: events;
+}
+
+.display-box {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-areas: "title title title title";
+    background: mistyrose;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid pink 10px;
+    width: 1000px;
+}
+
+.box-title {
+    grid-area: title;
+}
+
+.box-title h1 {
+    font-family: 'Garlando';
+    src: url('fonts/Garlando.ttf');
+    text-align: center;
+}
+
+.in-display-box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.title, .descr, .price-date, .image{
+    border: black solid 4px;
+    margin: 0;
+    width: 200px;
+}
+
+.price-date {
+    border-top: none;
+}
+
+.image {
+    border: black solid 4px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.title, .price-date {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+
