@@ -56,8 +56,10 @@ body {
 
 .display-box {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-areas: "title title title";
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "title title";
     background: #ffe4e1dd;
     padding: 10px;
     border-radius: 5px;
@@ -113,9 +115,16 @@ body {
 }
 
 #chat-box {
+    display: flex;
+    flex-direction: column;
     grid-area: panel;
     background: #ffe4e1dd;
     padding: 10px;
     border-radius: 5px;
     border: solid pink 10px;
 }
+
+#chat-box label, input {
+    margin: 5px;
+}
+
