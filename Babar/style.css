@@ -30,7 +30,7 @@ body {
 #main-title {
     display: flex;
     grid-area: title;
-    text-align: center;
+    justify-content: center;
     font-size: xxx-large;
     vertical-align: center;
     flex-direction: row;
