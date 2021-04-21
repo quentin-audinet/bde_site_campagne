@@ -115,8 +115,6 @@ body {
 }
 
 #chat-box {
-    display: flex;
-    flex-direction: column;
     grid-area: panel;
     background: #ffe4e1dd;
     padding: 10px;
@@ -124,7 +122,17 @@ body {
     border: solid pink 10px;
 }
 
-#chat-box label, input {
-    margin: 5px;
+#chat-box form {
+    display: flex;
+    flex-direction: column;
 }
 
+#chat-box label, #chat-box .chat, #chat-box .message, #chat-box .name {
+    margin: 5px;
+    font-size: x-large;
+}
+
+#chat-box input {
+    margin: 5px;
+    max-width: 95%;
+}
