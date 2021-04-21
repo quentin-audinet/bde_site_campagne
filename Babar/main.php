@@ -20,7 +20,7 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
 	</head>
 
     <body>
-    <div id="main-title" ><img src="../images/babar/babar.png" width="80px" height="80px"><h1>Le site du bar</h1><img src="../images/babar/babar.png" width="80px" height="80px"></div>
+    <div id="main-title" ><img src="Images/babar.png" width="80px" height="80px"><h1>Le site du bar</h1><img src="Images/babar.png" width="80px" height="80px"></div>
         <ul id="beers" class="display-box">
             <span id="beers-title-box" class="box-title">
                 <h1>Nos bières</h1>
@@ -46,7 +46,7 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
                 <h3 id="sub-contact-title">(On répondra quand on sera sobre)</h3>
 
                 <div style="display: flex; align-items: center">
-                    <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="../images/babar/fb_beer.png"></a>
+                    <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="Images/fb_beer.png"></a>
                     <form action="" method="post">
                         <label for="nom">Nom :</label><br/>
                         <input type="text" id="nom" name="comment_name"/><br/>
