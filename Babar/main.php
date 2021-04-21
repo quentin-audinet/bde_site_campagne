@@ -38,12 +38,19 @@
                     <form action="" method="post">
                         <label for="nom">Nom :</label>
                         <input type="text" id="nom" name="nom"/><br/>
-                        <label for="message">Message</label>
+                        <label for="message">Message :</label>
                         <textarea name="message" id="message" cols="150" rows="10"></textarea><br/>
                         <input type="submit" value="Envoyer" width="100px" />
                     </form>
                 </div>
             </div>
+        </div>
+
+        <div id="chat-box">
+            <label>Nom</label>
+            <input>
+            <label>Message</label>
+            <input>
         </div>
     </body>
 
