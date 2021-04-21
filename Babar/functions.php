@@ -44,6 +44,14 @@ function show_events(){
                 <p class='price-date'>$date</p>
             </span>");
     }
-};
+}
+
+function post_chat($name, $message) {
+
+}
+
+function get_chat() {
+
+}
 
 ?>

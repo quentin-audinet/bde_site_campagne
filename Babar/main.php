@@ -36,11 +36,11 @@
                 <div style="display: flex; align-items: center">
                     <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="../images/babar/fb_beer.png"></a>
                     <form action="" method="post">
-                        <label for="nom">Nom :</label>
+                        <label for="nom">Nom :</label><br/>
                         <input type="text" id="nom" name="nom"/><br/>
                         <label for="message">Message :</label>
                         <textarea name="message" id="message" cols="150" rows="10"></textarea><br/>
-                        <input type="submit" value="Envoyer" width="100px" />
+                        <input type="submit" value="Envoyer" width="90%" />
                     </form>
                 </div>
             </div>

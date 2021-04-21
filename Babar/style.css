@@ -13,6 +13,7 @@ html {
     font-family: 'helvetica';
     background: url("Images/Babar.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 head title {
     font-family: 'GreatVibes';
@@ -20,13 +21,16 @@ head title {
 }
 
 body {
+    margin: 0 50px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: 20% 35% 35%;
     grid-template-areas:    "title title title"
                             "panel beers events"
                             "panel bottom bottom";
-    grid-gap: 20px;
+    grid-gap: 2.5%;
+    overflow-x: hidden;
+
 }
 
 #main-title {
