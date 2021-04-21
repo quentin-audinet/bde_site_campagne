@@ -40,10 +40,10 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
             <?php show_events(); ?>
         </ul>
 
-        <div style="grid-area: bottom" class="display-box">
+        <div style="grid-area: bottom" class="contact-box">
             <div>
-                <h1>Contactez-nous</h1>
-                <h3>(On répondra quand on sera sobre)</h3>
+                <h1 id="contact-title">Contactez-nous</h1>
+                <h3 id="sub-contact-title">(On répondra quand on sera sobre)</h3>
 
                 <div style="display: flex; align-items: center">
                     <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="../images/babar/fb_beer.png"></a>
@@ -59,15 +59,16 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
         </div>
 
         <div id="chat-box">
+            <h1>Chattons</h1>
             <form action="" method="post">
                 <label for="chat_name">Nom</label>
                 <input id="chat_name" name="chat_name" /><br/>
                 <label for="chat_message">Message</label>
                 <input id="chat_message" name="chat_message" />
                 <input type="submit" value="envoyer">
-
-                <?php get_chat(); ?>
             </form>
+            <?php get_chat(); ?>
+
         </div>
     </body>
 

@@ -66,6 +66,15 @@ body {
     border: solid pink 10px;
 }
 
+.contact-box {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #ffe4e1dd;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid pink 10px;
+}
+
 .box-title {
     grid-area: title;
 }
@@ -117,6 +126,10 @@ body {
 #contact-title {
     text-align: center;
     font-family: GreatVibes;
+}
+
+#sub-contact-title {
+    text-align: center;
 }
 
 #chat-box {
