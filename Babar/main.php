@@ -29,17 +29,21 @@
         </ul>
 
         <div style="grid-area: bottom" class="display-box">
-            <h1>Contactez-nous</h1>
-            <h3>(On répondra quand on sera sobre)</h3>
+            <div>
+                <h1>Contactez-nous</h1>
+                <h3>(On répondra quand on sera sobre)</h3>
 
-            <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="../images/babar/fb_beer.png"></a>
-            <form action="" method="post">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom"/><br/>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="150" rows="10"></textarea><br/>
-                <input type="submit" value="Envoyer" width="100px" />
-            </form>
+                <div style="display: flex; align-items: center">
+                    <a href="https://www.facebook.com/telecom.baritech" target="_blank"><img src="../images/babar/fb_beer.png"></a>
+                    <form action="" method="post">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom"/><br/>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="150" rows="10"></textarea><br/>
+                        <input type="submit" value="Envoyer" width="100px" />
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 
