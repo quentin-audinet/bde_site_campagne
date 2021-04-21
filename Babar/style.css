@@ -21,16 +21,17 @@ head title {
 body {
     justify-content: center;
     display: grid;
-    grid-template-areas:    "title title"
-                            "beers events"
-                            "bottom bottom";
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas:    "title title title"
+                            "panel beers events"
+                            "panel bottom bottom";
     grid-gap: 20px;
 }
 
 #main-title {
     display: flex;
     grid-area: title;
-    text-align: center;
+    justify-content: center;
     font-size: xxx-large;
     vertical-align: center;
     flex-direction: row;
@@ -106,3 +107,6 @@ body {
     text-align: center;
 }
 
+#chat-box {
+    grid-area: panel;
+}
