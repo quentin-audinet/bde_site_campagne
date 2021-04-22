@@ -10,6 +10,7 @@
 
 html {
     width: 100%;
+    height: 100%;
     font-family: 'helvetica';
     background: url("Images/Babar.png");
     background-size: cover;
@@ -44,6 +45,7 @@ head title {
 @media screen and (min-device-width: 600px){
 
     body {
+        height: 150%;
         margin: 0 50px;
         justify-content: center;
         display: grid;
@@ -71,6 +73,14 @@ head title {
     .chat {
         padding-left: 5%;
     }
+
+    #chat-box input {
+        font-size: 2em;
+    }
+    #chat_message, #chat_name {
+        font-size: 2em;
+        height: 50px;
+    }
 }
 .display-box {
     display: grid;
@@ -82,6 +92,7 @@ head title {
     padding: 10px;
     border-radius: 5px;
     border: solid pink 10px;
+    overflow-y: scroll;
 }
 
 .contact-box {
