@@ -12,10 +12,10 @@ function show_beers()
     $data = $db->query("SELECT * FROM babar_beers");
 
     while ($row = $data->fetch()) {
-        $nom = $row["name"];
-        $img = $row["img"];
-        $descrition = $row["description"];
-        $prix = $row["price"];
+        $nom = htmlspecialchars($row["name"]);
+        $img = htmlspecialchars($row["img"]);
+        $descrition = htmlspecialchars($row["description"]);
+        $prix = htmlspecialchars($row["price"]);
 
         print("<span class='in-display-box'>
                 <span class='title'>$nom</span>
@@ -32,10 +32,10 @@ function show_events(){
     $data = $db->query("SELECT * FROM babar_events");
 
     while ($row = $data->fetch()) {
-        $nom = $row["name"];
-        $img = $row["img"];
-        $descrition = $row["description"];
-        $date = $row["date"];
+        $nom = htmlspecialchars($row["name"]);
+        $img = htmlspecialchars($row["img"]);
+        $descrition = htmlspecialchars($row["description"]);
+        $date = htmlspecialchars($row["date"]);
 
         print("<span class='in-display-box'>
                 <span class='title'>$nom</span>
@@ -57,7 +57,7 @@ function get_chat() {
     $req = "SELECT * FROM babar_chat ORDER BY 'date' DESC";
     $data = $db->query($req);
     while($row = $data->fetch()) {
-        print("<div class='chat'><span class='name'>".$row['name']."</span> : <span class='message'>". $row['message'] ."</span></div>    
+        print("<div class='chat'><span class='name'>". htmlspecialchars($row['name'])."</span> : <span class='message'>". htmlspecialchars($row['message']) ."</span></div>    
         ");
     }
 }

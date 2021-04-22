@@ -20,19 +20,6 @@ head title {
     text-align: center;
 }
 
-body {
-    margin: 0 50px;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 20% 35% 35%;
-    grid-template-areas:    "title title title"
-                            "panel beers events"
-                            "panel bottom bottom";
-    grid-gap: 2.5%;
-    overflow-x: hidden;
-
-}
-
 #main-title {
     display: flex;
     grid-area: title;
@@ -54,6 +41,37 @@ body {
     grid-area: events;
 }
 
+@media screen and (min-device-width: 600px){
+
+    body {
+        margin: 0 50px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 20% 35% 35%;
+        grid-template-areas:    "title title title"
+                            "panel beers events"
+                            "panel bottom bottom";
+        grid-gap: 2.5%;
+        overflow-x: hidden;
+
+    }
+}
+
+@media screen and (max-device-width: 600px){
+
+    body {
+        margin: 0 50px;
+        overflow-x: hidden;
+    }
+
+    .display-box, .contact-box {
+        margin: 50px 0;
+    }
+
+    .chat {
+        padding-left: 5%;
+    }
+}
 .display-box {
     display: grid;
     margin-top: 0;

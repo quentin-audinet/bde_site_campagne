@@ -51,7 +51,7 @@ if(isset($_POST['chat_name']) && isset($_POST['chat_message'])) {
                         <label for="nom">Nom :</label><br/>
                         <input type="text" id="nom" name="comment_name"/><br/>
                         <label for="message">Message :</label>
-                        <textarea name="comment_message" id="message" cols="150" rows="10"></textarea><br/>
+                        <textarea name="comment_message" id="message" rows="10" style="width: 190%"></textarea><br/>
                         <input type="submit" value="Envoyer" width="90%" />
                     </form>
                 </div>
