@@ -2,7 +2,8 @@
 
 $level = 2;
 $answer = "pdc{de984caf82f37b152f1160ab971bd2cde80db0fee848e856b41e62598aa7cd0c}";
-
+$hints=-1;
+$hint = "<script>alert(\"La requête ici est SELECT * FROM weak_table WHERE username='<username>' AND password='<password>';   Le bouton est aussi activable en inspectant bien...\");</script>";
 include "base.php";
 
 include "../db/db_connect.php";
@@ -24,13 +25,22 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
     <title>Enigme 2</title>
     <link rel="stylesheet" href="enigmes.css" />
 
+    <style>
+        .challenge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
 </head>
 
 <body>
 <header>
     <a href="enigmes.php">Retour</a>
-    <a href="">Indice</a>
+    <a href="?hint=2">Indice</a>
 </header>
+<?php if(isset($hint_form)) {print($hint_form);} ?>
 
 <div class="challenge">
     <form action="" method="post">
@@ -50,7 +60,9 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         <input type="text" name="answer" />
         <input type="submit" value="Vérifier" disabled/>
     </form>
-    <?php if(isset($result)) { print($result);} ?>
+    <?php if(isset($result)) { print($result);}
+    if(isset($show_hint)){print($hint);}
+    ?>
 
 </div>
 </body>

@@ -2,7 +2,8 @@
 
 $level = 4;
 $answer = "72";
-
+$hints=-1;
+$hint = "<script>alert('La bague vaut 35€')</script>";
 include "base.php";
 ?>
 
@@ -34,9 +35,9 @@ include "base.php";
 <body>
 <header>
     <a href="enigmes.php">Retour</a>
-    <a href="">Indice</a>
+    <a href="?hint=4">Indice</a>
 </header>
-
+<?php if(isset($hint_form)) {print($hint_form);} ?>
 <div>
     <form action="" method="post">
         <h2>Alban cherche désespéremment à évaluer la valeur de son écocup...</h2>
@@ -53,6 +54,7 @@ include "base.php";
 
         <?php if(isset($result)) {print($result);} ?>
     </form>
+    <?php if(isset($show_hint)){print($hint);} ?>
 
 </div>
 </body>

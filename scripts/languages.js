@@ -18,6 +18,7 @@ dictionary.add("t_contact","Nous contacter", "Contact us");
 dictionary.add("t_cgu", "Conditions générales d'utilisation", "Terms of use");
 dictionary.add("t_news", "News", "News");
 dictionary.add("t_carabed-defis", "Nos défis", "Our challenges");
+dictionary.add("t_chase", "Chasse aux trésors", "Treasure chase");
 
 dictionary.add("t_news_titre", "Toutes les news des Carabed", "All Carabed's news");
 dictionary.add("t_defis_titre", "Tous nos défis", "All our challenges");

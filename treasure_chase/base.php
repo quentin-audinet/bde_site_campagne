@@ -26,4 +26,32 @@ if(isset($_POST['answer'])) {
         $result = "<p class='result incorrect'>incorrect</p>";
     }
 }
+
+$hints = getHint($_SESSION['username'], $level);
+
+if(isset($_POST['use_hint'])) {
+    $show_hint = true;
+    useHint($_SESSION['username'], $level, $hints);
+    $hints--;
+}
+
+
+if(isset($_GET['hint'])) {
+    checkHint($_SESSION['username']);
+    $hints = getHint($_SESSION['username'], $level);
+    if($hints ==0) {
+        $hint_form = "<h1 style='color: red; text-align: center'>Tu n'as plus d'indices !</h1>";
+    } else {
+        if ($hints != -1) {
+            $hint_form = "<form action='' method='post'>
+<h3>Tu as actuellement $hints indices. En utiliser un ?</h3>
+<div><input type='checkbox' name='use_hint' id='use_hint'/><label for='use_hint'>Utiliser</label>
+<input type='submit' value='envoyer'/></div>
+
+</form>";
+        } else {
+            $show_hint = true;
+        }
+    }
+}
 ?>

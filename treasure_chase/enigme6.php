@@ -1,23 +1,10 @@
 <?php
-session_start();
-if(!isset($_SESSION['username'])) {
-    header("Location: create_account.php");
-}
-include "functions.php";
 
-if(!checkLevel($_SESSION['username'], 6)) {
-    header("Location: enigmes.php");
-}
-
-if(isset($_POST['answer'])) {
-    if(checkAnswer(strtolower($_POST['answer']), "jolly roger")) {
-        addLevel($_SESSION['username'], 6);
-        $result = "<p class='result correct'>Correct !</p>";
-    }
-    else {
-        $result = "<p class='result incorrect'>incorrect</p>";
-    }
-}
+$level = 6;
+$answer = "j'aime la si101";
+include "base.php";
+$hints=-1;
+$hint = "<script>alert('Tu peux trouver des outils en ligne pour analyser le spectre audio')</script>";
 ?>
 
 <!DOCTYPE html>
@@ -28,48 +15,32 @@ if(isset($_POST['answer'])) {
     <link rel="stylesheet" href="enigmes.css" />
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f5cbb4;
+        .download {
+            color: #0f2029;
+            margin: 5px;
         }
 
-        a {
-            text-decoration: none;
+        .download:hover {
+            border-bottom: solid 1px #0f2029;
         }
-
-        header {
-            padding: 15px;
-            background-color: #580f0f;
-            font-size: 1.5vw;
-        }
-
-        header a {
-            color: #d7cca4;
-            margin-left: 40px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
-
     </style>
 </head>
 
 <body>
 <header>
     <a href="enigmes.php">Retour</a>
-    <a href="">Indice</a>
+    <a href="?hint=6">Indice</a>
 </header>
+<?php if(isset($hint_form)) {print($hint_form);} ?>
 
 <div>
     <form action="" method="post">
+        <h2>Chaima a reçu un audio très louche... Aide la à comprendre de quoi il s'agit</h2>
+        <audio src="sound.wav" controls ></audio><a class="download" href="sound.wav">Télécharger</a>
         <input type="text" id="answer" name="answer" /><input type="submit" value="Valider">
         <?php if(isset($result)) {print($result);} ?>
     </form>
+    <?php if(isset($show_hint)) {print($hint);} ?>
 
 </div>
 </body>

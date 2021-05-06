@@ -2,7 +2,8 @@
 
 $level = 1;
 $answer = "jolly roger";
-
+$hints=0;
+$hint = "<script>alert('Cherche sur internet')</script>";
 include "base.php";
 ?>
 
@@ -25,9 +26,9 @@ include "base.php";
 <body>
 <header>
     <a href="enigmes.php">Retour</a>
-    <a href="">Indice</a>
+    <a href="?hint=1">Indice</a>
 </header>
-
+<?php if(isset($hint_form)) {print($hint_form);} ?>
 <div>
     <form action="" method="post">
         <h2>Quel est le véritable nom de ce logo ?</h2>
@@ -35,7 +36,7 @@ include "base.php";
         <input type="text" id="answer" name="answer" /><input type="submit" value="Valider">
         <?php if(isset($result)) {print($result);} ?>
     </form>
-
+<?php if(isset($show_hint)) {print($hint);} ?>
 </div>
 </body>
 </html>

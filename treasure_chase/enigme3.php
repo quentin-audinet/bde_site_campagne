@@ -2,7 +2,8 @@
 
 $level = 3;
 $answer = "bajak laut";
-
+$hints=-1;
+$hint = "<script>alert('Google Traduction et son mode de détection des langues est ton ami')</script>";
 include "base.php";
 ?>
 
@@ -26,8 +27,9 @@ include "base.php";
 <body>
 <header>
     <a href="enigmes.php">Retour</a>
-    <a href="">Indice</a>
+    <a href="?hint=3">Indice</a>
 </header>
+<?php if(isset($hint_form)) {print($hint_form);} ?>
 
 <div>
     <form action="" method="post">
@@ -36,6 +38,7 @@ include "base.php";
         <input type="text" id="answer" name="answer" /><input type="submit" value="Valider">
         <?php if(isset($result)) {print($result);} ?>
     </form>
+    <?php if(isset($show_hint)){print($hint);} ?>
 
 </div>
 </body>
