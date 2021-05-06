@@ -27,8 +27,8 @@
                 <li><a href="defis.php" class="menu"><span class="t_defis" /></a> </li>
                 <li><a href="Listeux.php" class="menu"><span class="t_membres" /></a> </li>
                 <li><a href="partners.php"class="menu"><span class="t_sponsors" /></a> </li>
-                <li><a href="Galerie.php" class="menu"><span class="t_photos" /></a> </li>
                 <li><a href="contact.php" class="menu"><span class="t_contact" /></a> </li>
+                <li><a href="treasure_chase.php" class="menu"><span class="t_chase" /> </a> </li>
                 <?php if(isset($_COOKIE['user_id'])) {
                     print("<li><a href='carabed/backside.php' class='menu'>Backside</a></li>");
                 }?>
