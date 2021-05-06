@@ -48,7 +48,7 @@ include "base.php";
             <p><img src="../images/treasure_chase/piece.png" alt="piece" /><img src="../images/treasure_chase/bague.png" alt="bague" /> = 42€</p>
             <p><img src="../images/treasure_chase/sabre.png" alt="sabre" /><img src="../images/treasure_chase/crane_or.png" alt="crane" /><img src="../images/treasure_chase/crane_or.png" alt="crane" /><img src="../images/treasure_chase/piece.png" alt="piece" /> = 139€</p>
             <p><img src="../images/treasure_chase/bague.png" alt="bague" /><img src="../images/treasure_chase/piece.png" alt="piece" /><img src="../images/treasure_chase/piece.png" alt="piece" /><img src="../images/treasure_chase/piece.png" alt="piece" /><img src="../images/treasure_chase/piece.png" alt="piece" /><img src="../images/treasure_chase/piece.png" alt="piece" /> = 70€</p>
-            <p><img src="../images/treasure_chase/bague.png" alt="bague" /><img src="../images/treasure_chase/crane_or.png" alt="crane" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /> = 177€</p>
+            <p><img src="../images/treasure_chase/bague.png" alt="bague" /><img src="../images/treasure_chase/crane_or.png" alt="crane" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /><img src="../images/treasure_chase/sabre.png" alt="sabre" /> = 181€</p>
         </div>
         <div><input type="text" id="answer" name="answer" />€</div><input type="submit" value="Valider">
 
