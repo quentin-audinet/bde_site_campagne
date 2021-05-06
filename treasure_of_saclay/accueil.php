@@ -16,7 +16,6 @@ include "functions.php";
     <title>Home</title>
 
     <style>
-
         html {
             height: 100%;
         }
@@ -59,7 +58,6 @@ include "functions.php";
 
         #add {
             position: absolute;
-            bottom: 0;
             right: 5%;
             display: flex;
             align-items: center;

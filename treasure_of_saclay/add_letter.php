@@ -85,7 +85,7 @@ if(isset($_POST['hint']) && isset($_POST['code'])) {
 <h1>Entrez les informations que vous avez récupéré</h1>
 <form action="" method="post">
 
-    <div><label for="hint">Numéro de l'indice: </label><input type="number" max="8" min="1" name="hint" id="hint" required/></div>
+    <div><label for="hint">Numéro de l'indice: </label><input type="number" max="14" min="1" name="hint" id="hint" required/></div>
     <div><label for="code">Code de l'indice: </label><input type="text" name="code" id="code" required></div>
     <input id="submit" type="submit" value="Vérifier" />
     <?php if(isset($result)) {print($result);} ?>
