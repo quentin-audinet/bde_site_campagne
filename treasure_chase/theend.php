@@ -91,19 +91,17 @@ $classement.="</ul>";
     }
     ?></h2>
 
-<!-- TODO ajouter lots-->
-
 <?php
 
 switch ($rank) {
     case 1:
-        print("Tu as gagné la JBL");
+        print("Premier !! Tu as gagné la JBL Flip 5 !!! On te contactera bientôt (sauf si tu as un pseudo bizzare, dans ce cas contacte Akban d'Authuille)");
         break;
     case 2:
-        print("Tu as gagné la license");
+        print("Tu es deuxième bravo ! Tu repart donc ave une carte cadeau de 40€ FNAC ! On te contactera bientôt (sauf si tu as un pseudo bizzare, dans ce cas contacte Akban d'Authuille)");
         break;
     default:
-        print("Tu n'as malheuresement rien gagné...");
+        print("Tu n'as malheuresement rien gagné... Mais bravo d'être arrivé jusqu'à la fin !");
         break;
 }
 ?>
