@@ -8,8 +8,11 @@ RUN docker-php-ext-install pdo_mysql
 
 RUN mkdir /var/www/html/tmp
 
-COPY . /var/www/html/
+RUN mkdir /var/www/html/tmp/treasure_chase
 
+RUN mkdir /var/www/html/tmp/treasure_chase/photos /var/www/html/tmp/treasure_chase/chemins
+
+COPY . /var/www/html/
 
 COPY ./images/* /var/www/html/tmp/
 
