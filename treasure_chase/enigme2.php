@@ -3,7 +3,7 @@
 $level = 2;
 $answer = "pdc{de984caf82f37b152f1160ab971bd2cde80db0fee848e856b41e62598aa7cd0c}";
 $hints=-1;
-$hint = "<script>alert(\"La requête ici est SELECT * FROM weak_table WHERE username='<username>' AND password='<password>';   Le bouton est aussi activable en inspectant bien...\");</script>";
+$hint = "<script>alert(\"La requête ici est SELECT * FROM weak_table WHERE username='<username>' AND password='<password>'; Que se passerait-il en ajoutant quelque part un '; ???  Le bouton est aussi activable en inspectant bien...\");</script>";
 include "base.php";
 
 include "../db/db_connect.php";

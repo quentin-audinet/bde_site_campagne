@@ -36,7 +36,7 @@
 <?php include "templates/header.php"; ?>
 
 <div id="method">
-    <a href=""><div><img src="images/presentiel.jpg" width="300" height="300"/><p>Présentiel</p></div></a><a href="treasure_chase/accueil.php"><div><img src="images/distanciel.jpg" width="300" height="300"/><p>Distanciel</p></div></a>
+    <a href="treasure_of_saclay/connect.php"><div><img src="images/presentiel.jpg" width="300" height="300"/><p>Présentiel</p></div></a><a href="treasure_chase/accueil.php"><div><img src="images/distanciel.jpg" width="300" height="300"/><p>Distanciel</p></div></a>
 </div>
 
 <?php include "templates/footer.html" ?>
